@@ -1,0 +1,380 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-12",
+  "countries": {
+    "NO": {
+      "name": "Norway",
+      "localName": "Norge",
+      "currency": "NOK",
+      "language": "no",
+      "domains": {
+        "main": "getaround.com/no",
+        "longTermRental": "langtidsleie.getaround.com"
+      },
+      "features": {
+        "getaroundConnect": true,
+        "nativeConnect": true,
+        "nativeConnectNote": "Via Smartcar API - Tesla og andre kompatible kjøretøy",
+        "keyExchange": true,
+        "longTermRental": {
+          "available": true,
+          "durationDays": { "min": 30, "max": 180 },
+          "kmPerMonth": 2000,
+          "cancellation": {
+            "freeBefore": 5,
+            "partialRefundDays": "1-5",
+            "partialRefundPercent": 50
+          }
+        },
+        "getaroundForBusiness": {
+          "available": true
+        },
+        "entrepreneursProgram": "unverified"
+      },
+      "connectSubscription": {
+        "amount": 290,
+        "currency": "NOK",
+        "period": "month"
+      },
+      "vehicleTypes": {
+        "motorhome": true,
+        "campervan": true,
+        "van": true,
+        "suv": true,
+        "citycar": true,
+        "electric": true
+      },
+      "vehicleCategories": ["Eco", "Comfort", "Privilege", "Prestige"],
+      "vehicleLimits": {
+        "maxAge": { "connect": 12, "removal": 15 },
+        "maxKm": {
+          "car": { "connect": 150000, "removal": 200000 },
+          "van": { "connect": 200000, "removal": 230000 }
+        },
+        "maxValue": { "amount": 1000000, "currency": "NOK" }
+      },
+      "driverRequirements": {
+        "Eco": { "minAge": 20, "licenseYears": 2 },
+        "Comfort": { "minAge": 20, "licenseYears": 2 },
+        "Privilege": { "minAge": 25, "licenseYears": 5 },
+        "Prestige": { "minAge": 30, "licenseYears": 10, "additionalRequirements": ["Tidligere feilfri leie"] }
+      },
+      "youngDriverSurcharge": [
+        { "ageRange": "20-24", "amount": 290, "currency": "NOK", "per": "trip" },
+        { "ageRange": "25-26", "amount": 200, "currency": "NOK", "per": "trip" }
+      ],
+      "insurance": {
+        "partner": "If",
+        "verified": true
+      },
+      "connectCities": ["Oslo", "Bergen", "Trondheim", "Stavanger", "Tromsø", "Drammen", "Asker", "Sandvika", "Lysaker"],
+      "airports": ["Oslo Gardermoen (OSL)", "Bergen Flesland (BGO)"],
+      "tollIntegration": ["Autosync", "Flyt"],
+      "seasonality": {
+        "summer": { "months": "June-August", "demand": "high" },
+        "christmas": { "months": "December", "demand": "high" },
+        "northernLights": { "months": "February-March", "demand": "very_high", "location": "Tromsø" },
+        "easter": { "months": "March-April", "demand": "moderate_high" }
+      },
+      "competitors": ["Hyre", "Bilkollektivet", "FINN.no", "Sixt", "Hertz", "Avis", "Europcar"],
+      "history": {
+        "originalBrand": "Nabobil",
+        "acquisitionYear": 2019
+      },
+      "fleetSize": {
+        "activeCars": 6778,
+        "asOf": "2025-11",
+        "topRegions": [
+          {"name": "Oslo", "cars": 2067},
+          {"name": "Akershus", "cars": 848},
+          {"name": "Troms", "cars": 775},
+          {"name": "Nordland", "cars": 563},
+          {"name": "Bergen", "cars": 419},
+          {"name": "Stavanger", "cars": 336},
+          {"name": "Trondheim", "cars": 265}
+        ]
+      }
+    },
+    "FR": {
+      "name": "France",
+      "localName": "France",
+      "currency": "EUR",
+      "language": "fr",
+      "domains": {
+        "main": "getaround.com/fr"
+      },
+      "features": {
+        "getaroundConnect": true,
+        "nativeConnect": false,
+        "keyExchange": true,
+        "longTermRental": { "available": false },
+        "getaroundForBusiness": {
+          "available": true,
+          "requiresSIRET": true,
+          "companiesUsing": 2000,
+          "trainStations": 500
+        },
+        "connectSubscription": {
+        "amount": 29,
+        "currency": "EUR",
+        "period": "month"
+      },
+      "entrepreneursProgram": {
+          "available": true,
+          "launchYear": 2017,
+          "professionalsCount": 500,
+          "tiers": ["Entrepreneur", "Professionnel", "Enterprise"],
+          "thresholds": {
+            "entrepreneur": { "cars": 3, "revenue12m": 20000, "currency": "EUR" },
+            "professionnel": { "revenue12m": 40000, "currency": "EUR" }
+          },
+          "benefits": [
+            "Dedicated account manager",
+            "AXA fleet insurance option",
+            "7-day damage reporting window",
+            "Partner network access"
+          ],
+          "partners": ["Renault", "Reezocar", "Allianz", "AXA", "Captain Contrat", "Yespark", "Onepark"]
+        }
+      },
+      "vehicleTypes": {
+        "motorhome": false,
+        "campervan": true,
+        "van": true,
+        "suv": true,
+        "citycar": true,
+        "electric": true
+      },
+      "vehicleCategories": ["Eco", "Comfort", "Privilege", "Prestige"],
+      "vehicleLimits": {
+        "maxAge": { "connect": 12, "removal": 15 },
+        "maxKm": {
+          "car": { "connect": 150000, "removal": 200000 },
+          "van": { "connect": 200000, "removal": 230000 }
+        },
+        "maxValue": { "amount": 50000, "currency": "EUR" }
+      },
+      "driverRequirements": {
+        "Eco": { "minAge": 20, "licenseYears": 2 },
+        "Comfort": { "minAge": 20, "licenseYears": 2 },
+        "Privilege": { "minAge": 25, "licenseYears": 5 },
+        "Prestige": { "minAge": 30, "licenseYears": 10, "additionalRequirements": ["Location préalable sans dommage significatif"] }
+      },
+      "youngDriverSurcharge": "unverified",
+      "insurance": {
+        "partner": "AXA",
+        "verified": true
+      },
+      "zfe": {
+        "mandatory": true,
+        "mandatorySince": "January 2025",
+        "citiesAffected": "150000+ inhabitants",
+        "fineAmount": 68,
+        "currency": "EUR",
+        "critAirRequired": true,
+        "critAirWebsite": "certificat-air.gouv.fr",
+        "critAirCost": 4.76,
+        "cities": {
+          "Paris": { "restricted": ["Crit'Air 4", "Crit'Air 5"], "hours": "Mon-Fri 8h-20h" },
+          "Lyon": { "restricted": ["Crit'Air 5", "Non classé"], "hours": "variable" },
+          "Marseille": { "required": "Crit'Air 3+", "hours": "24/7" },
+          "Strasbourg": { "restricted": ["Crit'Air 4+"], "hours": "variable" },
+          "Toulouse": { "required": "Crit'Air 0-2", "hours": "24/7" },
+          "Grenoble": { "restricted": ["Crit'Air 4+"], "hours": "Mon-Fri 7h-19h" }
+        }
+      },
+      "majorCities": ["Paris", "Lyon", "Bordeaux", "Marseille", "Toulouse", "Montpellier", "Nice", "Avignon"],
+      "airports": ["Paris CDG", "Paris Orly", "Lyon", "Marseille", "Toulouse", "Nice", "Bordeaux"],
+      "trainStationsWithService": 500,
+      "competitors": ["Turo", "OuiCar", "Sixt", "Hertz", "Avis", "Europcar"],
+      "history": {
+        "originalBrand": "Drivy",
+        "foundedYear": 2010,
+        "founder": "Paulin Dementhon",
+        "acquisitionYear": 2019,
+        "acquisitionPrice": "300M USD",
+        "usersAtAcquisition": "2.5 million"
+      },
+      "fleetSize": {
+        "activeCars": 23209,
+        "asOf": "2025-11",
+        "topCities": [
+          {"name": "Paris", "cars": 5866},
+          {"name": "Île-de-France (hors Paris)", "cars": 3066},
+          {"name": "Lyon", "cars": 865},
+          {"name": "Marseille", "cars": 862},
+          {"name": "Bordeaux", "cars": 811},
+          {"name": "Nice", "cars": 765},
+          {"name": "Toulouse", "cars": 589},
+          {"name": "Montpellier", "cars": 449},
+          {"name": "Lille", "cars": 413}
+        ]
+      }
+    },
+    "DE": {
+      "name": "Germany",
+      "localName": "Deutschland",
+      "currency": "EUR",
+      "language": "de",
+      "domains": {
+        "main": "getaround.com/de"
+      },
+      "features": {
+        "getaroundConnect": true,
+        "nativeConnect": false,
+        "keyExchange": true,
+        "longTermRental": { "available": false },
+        "getaroundForBusiness": "unverified",
+        "entrepreneursProgram": true,
+        "paypalPayment": true
+      },
+      "vehicleTypes": {
+        "motorhome": false,
+        "campervan": true,
+        "van": true
+      },
+      "vehicleCategories": ["Eco", "Comfort", "Privilege"],
+      "vehicleLimits": {
+        "maxValue": { "amount": 50000, "currency": "EUR" }
+      },
+      "youngDriverSurcharge": [
+        { "ageRange": "18-25", "amount": 9.30, "currency": "EUR", "per": "trip" }
+      ],
+      "competitors": ["Share Now", "Sixt Share", "Miles"]
+    },
+    "ES": {
+      "name": "Spain",
+      "localName": "España",
+      "currency": "EUR",
+      "language": "es",
+      "domains": {
+        "main": "getaround.com/es"
+      },
+      "features": {
+        "getaroundConnect": true,
+        "nativeConnect": false,
+        "keyExchange": true,
+        "longTermRental": { "available": false },
+        "getaroundForBusiness": "unverified",
+        "entrepreneursProgram": true
+      },
+      "vehicleTypes": {
+        "motorhome": false,
+        "campervan": true,
+        "van": true
+      },
+      "vehicleCategories": ["Eco", "Comfort", "Privilege"],
+      "vehicleLimits": {
+        "maxValue": { "amount": 50000, "currency": "EUR" }
+      },
+      "youngDriverSurcharge": "unverified",
+      "zfe": {
+        "barcelona": {
+          "registrationRequired": true,
+          "registrationFee": 7,
+          "currency": "EUR",
+          "occasionalAccess": "24 days/year",
+          "hours": "Mon-Fri 7am-8pm"
+        }
+      },
+      "licenseRules": {
+        "nonEEA": {
+          "maxStayWithForeignLicense": "6 months"
+        }
+      },
+      "competitors": ["Amovens/GoMore"]
+    },
+    "BE": {
+      "name": "Belgium",
+      "localName": "Belgique/België",
+      "currency": "EUR",
+      "language": ["fr", "nl"],
+      "domains": {
+        "main": "getaround.com/be"
+      },
+      "features": {
+        "getaroundConnect": true,
+        "nativeConnect": false,
+        "keyExchange": true,
+        "longTermRental": { "available": false },
+        "entrepreneursProgram": true
+      },
+      "vehicleTypes": {
+        "motorhome": false,
+        "campervan": true,
+        "van": true
+      },
+      "vehicleCategories": ["Eco", "Comfort", "Privilege"],
+      "vehicleLimits": {
+        "maxValue": { "amount": 50000, "currency": "EUR" }
+      },
+      "youngDriverSurcharge": [
+        { "ageRange": "18-23", "amount": 30, "currency": "EUR", "per": "trip" },
+        { "ageRange": "24-25", "amount": 20, "currency": "EUR", "per": "trip" }
+      ],
+      "competitors": ["Cambio", "Poppy"]
+    },
+    "AT": {
+      "name": "Austria",
+      "localName": "Österreich",
+      "currency": "EUR",
+      "language": "de",
+      "domains": {
+        "main": "getaround.com/at"
+      },
+      "features": {
+        "getaroundConnect": true,
+        "nativeConnect": false,
+        "keyExchange": true,
+        "longTermRental": { "available": false },
+        "entrepreneursProgram": true,
+        "paypalPayment": true
+      },
+      "vehicleTypes": {
+        "motorhome": false,
+        "campervan": true,
+        "van": true
+      },
+      "vehicleCategories": ["Eco", "Comfort", "Privilege"],
+      "vehicleLimits": {
+        "maxValue": { "amount": 50000, "currency": "EUR" }
+      },
+      "youngDriverSurcharge": null
+    }
+  },
+  "globalDefaults": {
+    "rentalIncludes": {
+      "kmPerDay": 200,
+      "maxKmPerRental": 2000,
+      "insurance": true,
+      "roadsideAssistance": true,
+      "freeCancellationHours": 48
+    },
+    "protectionPlans": ["Minimum", "Plus", "Premium"],
+    "damageClaimDeadlineDays": 5,
+    "payoutDays": 5,
+    "connectMinAvailability": {
+      "daysPerMonth": 15,
+      "weekendsPerMonth": 2
+    },
+    "photoInspection": {
+      "exteriorPhotos": 8,
+      "requiredAtCheckIn": true,
+      "requiredAtCheckOut": true
+    }
+  },
+  "featureMatrix": {
+    "headers": ["Feature", "NO", "FR", "DE", "ES", "BE", "AT"],
+    "rows": [
+      ["Getaround Connect", true, true, true, true, true, true],
+      ["Native Connect (Smartcar)", true, false, false, false, false, false],
+      ["Long-Term Rentals (30-180 days)", true, false, false, false, false, false],
+      ["Motorhome (Bobil)", true, false, false, false, false, false],
+      ["Campervan", true, true, true, true, true, true],
+      ["Van (Varebil/Utilitaire)", true, true, true, true, true, true],
+      ["Key Exchange", true, true, true, true, true, true],
+      ["4 vehicle categories", true, true, false, false, false, false],
+      ["PayPal payment", false, false, true, false, false, true]
+    ]
+  }
+}
