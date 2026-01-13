@@ -1,11 +1,11 @@
 ---
 name: getaround-seo-content-optimizer
-description: "Analyze and optimize blog content for Getaround's car-sharing platform, with comprehensive SEO and AEO (Answer Engine Optimization) for both traditional search engines and AI overviews. Use when asked to: (1) Analyze or audit existing blog articles for SEO performance, (2) Optimize or improve blog content, (3) Rewrite articles for better ranking, (4) Create SEO/AEO-optimized content for Getaround, (5) Fix low-performing articles, (6) Validate business fit and conversion potential of content ideas. Triggers include: optimize this article, improve SEO, analyze blog performance, rewrite for better ranking, is this article worth writing, validate business fit, make this AI-overview ready."
+description: "Analyze and optimize blog content for Getaround's car-sharing platform in Norway and France, with comprehensive SEO and AEO (Answer Engine Optimization) for both traditional search engines and AI overviews. Use when asked to: (1) Analyze or audit existing blog articles for SEO performance, (2) Optimize or improve blog content, (3) Rewrite articles for better ranking, (4) Create SEO/AEO-optimized content for Getaround, (5) Fix low-performing articles, (6) Validate business fit and conversion potential of content ideas. Triggers include: optimize this article, improve SEO, analyze blog performance, rewrite for better ranking, is this article worth writing, validate business fit, make this AI-overview ready."
 ---
 
 # Getaround SEO Content Optimizer
 
-Analyze existing blog articles and create optimized content for Getaround's car-sharing platform in Norway, with dual focus on traditional SEO and AEO (Answer Engine Optimization) for AI overviews.
+Analyze existing blog articles and create optimized content for Getaround's car-sharing platform in Norway and France, with dual focus on traditional SEO and AEO (Answer Engine Optimization) for AI overviews.
 
 ## Core Capabilities
 
@@ -17,20 +17,91 @@ Analyze existing blog articles and create optimized content for Getaround's car-
 
 ## Workflow
 
-### Step 1: Context Loading & Audience Identification
+### Step 0: Market Detection & Context Loading
 
-**Before analyzing any article, load context:**
+**CRITICAL: Detect target market FIRST before any analysis.**
 
-Read all three reference documents to understand:
-- `getaround_master_context.md` - Getaround products, USPs, competitors, search behavior, tone of voice
-- `blog_performance_insights.md` - What content types perform well/poorly, engagement benchmarks, proven formats
-- `seo_aeo_best_practices.md` - Technical SEO requirements, AEO optimization, Getaround-specific integration guidelines
+#### Market Detection Signals (check in order):
 
-**Identify target audience:**
-- Renter content: Friendly, inspiring, practical (activities, travel, use-cases)
-- Owner content: Professional, data-driven, concrete (income, optimization, how-to)
+| Signal Type | Norway Indicators | France Indicators |
+|-------------|-------------------|-------------------|
+| URL pattern | `getaround.no` or `no.getaround.com` | `fr.getaround.com` or `getaround.com/fr/` |
+| Article language | Norwegian text | French text |
+| Geographic keywords | Oslo, Bergen, Tromsø, Stavanger, Trondheim | Paris, Lyon, Marseille, Bordeaux, Toulouse, Nice |
+| User explicit mention | "optimize this Norwegian article" or "for Norway" | "optimize this French article" or "for France" |
+| Currency/terminology | NOK/kr | EUR/€ |
 
-This differentiation is CRITICAL - tone, data usage, and CTA strength vary dramatically.
+#### Once market detected, load appropriate references:
+
+**If NORWAY detected:**
+- Read `references/norway/performance_data_no.md`
+- Read `references/norway/market_context_no.md`
+- Read `references/norway/tone_guide_no.md`
+- Read `references/shared/seo_aeo_best_practices.md` (universal)
+- **If owner/utleier content:** Also read:
+  - `references/shared/owner_content_principles.md` (universal owner guidelines)
+  - `references/norway/owner_content_guide_no.md` (NO-specific terminology, examples)
+
+Apply Norwegian calibrations:
+- **Tone:** Informal "du" form, warm and friendly
+- **Content focus:** Consumer activities (70%), outdoor/nature, family content, activity listicles
+- **Top formats:** Numbered listicles "Topp 5/10..." (activities, city guides)
+- **Geographic priority:** Oslo >> Tromsø > Bergen > Stavanger
+- **Audience split:** 70% consumer renters, 30% owners
+- **Engagement benchmarks:** Activities 65-80%, Owner guides 75-90%
+- **Typical length:** 1,200-1,800 words
+- **Key USPs:** Activity access, Nordic experiences, local availability
+- **Competitors:** Hyre (main), traditional rental (secondary)
+
+**If FRANCE detected:**
+- Read `references/france/performance_data_fr.md`
+- Read `references/france/market_context_fr.md`
+- Read `references/france/tone_guide_fr.md`
+- Read `references/france/keyword_strategy_fr.md`
+- Read `references/shared/seo_aeo_best_practices.md` (universal)
+- **If owner/propriétaire content:** Also read:
+  - `references/shared/owner_content_principles.md` (universal owner guidelines)
+  - `references/france/owner_content_guide_fr.md` (FR-specific terminology, examples)
+
+Apply French calibrations:
+- **Tone:** Formal "vous" form with strategic warmth (L'Adventure Lab standard)
+- **Content focus:** B2B/professional (60%), regulatory compliance, fiscal topics, professional vehicle guides
+- **Top formats:** Professional guides "Guide complet...", regulatory explainers "Tout savoir sur... en [Year]", TCO calculators
+- **Geographic priority:** Paris, Lyon, Marseille (major metros)
+- **Audience split:** 60% B2B/professional, 40% consumer
+- **Engagement benchmarks:** B2B guides 70-85%, Regulatory 65-80%
+- **Typical length:** 1,800-2,500 words (longer, more comprehensive)
+- **Critical elements:** Year-stamping mandatory ("2025"), regulatory citations, data tables
+- **Key USPs:** ZFE compliance, professional solutions, cross-border travel, fiscal optimization
+- **Competitors:** Turo (main), traditional rental (strong)
+- **Unique opportunities:** Regulatory content (ZFE, TVS, Crit'Air), professional fleet optimization
+
+**If market unclear:**
+Ask user to clarify: "I see content that could be for Norway or France. Which market should I optimize for?"
+Wait for confirmation before proceeding.
+
+#### Context validation checkpoint:
+Before proceeding to analysis, confirm you have:
+- ✅ Identified correct market (Norway or France)
+- ✅ Loaded market-specific references (3-4 files)
+- ✅ Noted tone guidelines (du vs vous)
+- ✅ Understood content focus (consumer vs B2B)
+- ✅ Identified proven formats for this market
+- ✅ Know geographic and audience priorities
+
+### Step 1: Audience Identification (After Market Detection)
+
+**Identify target audience within the detected market:**
+
+**Renter content:** Inspiring, practical (activities, travel, use-cases)
+- Norway: Warm, friendly "du" tone
+- France: Professional "vous" but warmer for consumer content (L'Adventure Lab style)
+
+**Owner content:** Professional, data-driven, concrete (income, optimization, how-to)
+- Norway: Friendly but concrete
+- France: Formal, analytical, fiscal focus
+
+This differentiation is CRITICAL - tone, data usage, and CTA strength vary dramatically between markets AND audiences.
 
 ### Step 2: Business Fit Validation (CRITICAL)
 
@@ -38,21 +109,24 @@ This differentiation is CRITICAL - tone, data usage, and CTA strength vary drama
 
 Ask three validation questions:
 
-1. **Search Intent Alignment** - Do people search this BECAUSE they need to rent a car?
-   - ✅ Good: "aktiviteter i Oslo" (planning trip → needs car)
-   - ✅ Good: "leie ut bil" (considering becoming owner)
-   - ❌ Bad: "skifte til vinterdekk" (maintenance on own car, not rental)
-   - ❌ Bad: "sikring av barn i bil" (general child safety, not rental-specific)
+**1. Search Intent Alignment** - Do people search this BECAUSE they need to rent a car?
+- ✅ Good (Norway): "aktiviteter i Oslo" (planning trip → needs car)
+- ✅ Good (Norway): "leie ut bil" (considering becoming owner)
+- ✅ Good (France): "déplacement professionnel" (business travel → vehicle need)
+- ✅ Good (France): "ZFE Paris 2025" (compliance → must rent ZFE-eligible vehicle)
+- ❌ Bad (Norway): "skifte til vinterdekk" (maintenance on own car, not rental)
+- ❌ Bad (Both): "sikring av barn i bil" (general child safety, not rental-specific)
 
-2. **Conversion Potential** - Can this drive bookings or owner registrations?
-   - ✅ High: Specific use-case (wedding car, moving van, long-term rental)
-   - ✅ Medium: Activities/travel inspiration (indirect booking driver)
-   - ✅ High: Owner guides with income data (direct owner recruitment)
-   - ❌ Low: Generic information applicable to any car
+**2. Conversion Potential** - Can this drive bookings or owner registrations?
+- ✅ High: Specific use-case (wedding car, moving van, long-term rental, professional vehicle)
+- ✅ Medium: Activities/travel inspiration (indirect booking driver)
+- ✅ High: Owner guides with income data (direct owner recruitment)
+- ✅ High (France): Regulatory compliance content (ZFE, professional tax optimization)
+- ❌ Low: Generic information applicable to any car
 
-3. **Product-Content Fit** - Does content naturally link to Getaround products?
-   - ✅ Good: Content mentions Connect, delivery, long-term rental, specific car types
-   - ❌ Bad: Content about general car ownership, maintenance, or driving tips
+**3. Product-Content Fit** - Does content naturally link to Getaround products?
+- ✅ Good: Content mentions Connect, delivery, long-term rental, specific car types
+- ❌ Bad: Content about general car ownership, maintenance, or driving tips
 
 **If business fit is WEAK:**
 - Flag concern to user immediately
@@ -88,10 +162,7 @@ Analyze article across six dimensions (reference `seo_aeo_best_practices.md` for
 - Assess hook strength (first paragraph)
 - Check CTA clarity and placement
 - Evaluate if content provides value to target audience
-- Compare against benchmarks from `blog_performance_insights.md`:
-  - Activities (renter): 65-80% engagement, 25-40 sec
-  - Owner guides: 75-90% engagement, 45-85 sec
-  - Use-cases: 80-90% engagement, 15-25 sec
+- Compare against benchmarks from market-specific `performance_data` file
 
 **E) AEO/AI-Overview Readiness**
 - Check for FAQ section (3-7 questions)
@@ -103,7 +174,7 @@ Analyze article across six dimensions (reference `seo_aeo_best_practices.md` for
 **F) Getaround Product-Content Fit**
 - Verify natural integration of Getaround products (Connect, long-term, B2B)
 - Assess conversion opportunities
-- Check geographic relevance (Oslo > Tromsø > Bergen priority)
+- Check geographic relevance (market-specific priorities)
 - Validate format matches proven patterns from data insights
 
 ### Step 4: Issue Identification & Prioritization
@@ -138,7 +209,7 @@ For each issue, provide:
 
 ### Step 5: Optimization Proposal
 
-Create structured proposal with seven components:
+Create structured proposal with five components:
 
 **A) Structural Changes**
 - Header reorg (before/after visualization)
@@ -163,22 +234,32 @@ Create structured proposal with seven components:
 - URL slug optimization
 - Internal link strategy
 
-**E) AEO Header Optimization** (Reference: `aeo_header_patterns.md`)
-- Convert headers to question format where appropriate
-- Add 40-60 word answer blocks after question headers
-- Structure for featured snippet optimization (paragraph/list/table)
-- Implement semantic chunking (one question per section)
+**E) AEO Enhancements**
+- FAQ schema implementation (content must be FAQ-formatted)
+- Q&A structure conversion
+- E-E-A-T signal additions
+- Unique data point integration
 
-**F) CTA Strategy** (Reference: `cta_framework.md`)
-- Select CTA strength based on content type and intent
-- Choose appropriate CTA trigger (value/urgency/exclusivity/clarity)
-- Determine placement (end only vs middle + end)
-- Draft specific CTA copy using power words and templates
+**F) AEO Header Optimization** (reference `aeo_header_patterns.md`)
+- Convert H2s to question format matching search queries
+- Plan 40-60 word answer-first paragraphs after each question header
+- Identify H2 injection opportunities for related high-volume queries
+- Apply PAA/Featured Snippet alignment (title tag, slug, H1, first sentence match query)
 
-**G) Schema Markup** (Reference: `schema_templates.md`)
-- Determine required schema types (Article always, FAQPage if 3+ Q&As, HowTo if step-by-step)
-- Generate JSON-LD markup
-- Validate against checklist
+**G) CTA Strategy** (reference `cta_framework.md`)
+- Select CTA strength based on content type and intent:
+  | Content Type | CTA Strength | Example |
+  |--------------|--------------|---------|
+  | Activity guides | Soft | "Utforsk flere tips" / "Découvrir plus" |
+  | Use-case articles | Medium | "Se tilgjengelige biler" / "Voir les voitures" |
+  | Owner guides | Strong | "Start å tjen i dag" / "Commencer à gagner" |
+- Choose appropriate power words for market (NO/FR)
+- Determine placement (end only for soft, middle+end for medium/strong)
+
+**H) Schema Markup Planning** (reference `schema_templates.md`)
+- Select schema types: Article (always) + FAQPage (if 3+ Q&A) + HowTo (if step-by-step)
+- Plan FAQ questions for schema extraction
+- Note HowTo steps if applicable
 
 ### Step 6: Execution (If Requested)
 
@@ -189,175 +270,270 @@ If user requests full rewrite, produce:
 Include:
 1. **Engaging hook** (first paragraph) - sensory, immersive, draw reader in
 2. **Clear promise** - what user will learn/get from article
-3. **AEO-optimized headers** - use question format for 50%+ of H2s (reference `aeo_header_patterns.md`)
-4. **Answer-first paragraphs** - 40-60 word direct answer after each question header
-5. **Structured body** with proper header hierarchy
-6. **Natural USP integration** (reference 7 USPs in `getaround_master_context.md`)
-7. **Practical information** (prices, parking, tips, season)
-8. **FAQ section** (3-7 questions with 40-60 word answers each)
-9. **Strategic CTA** - selected using `cta_framework.md` (type, trigger, placement, copy)
-10. **Complete metadata footer** - using template from `seo_aeo_best_practices.md` Part 8
+3. **Structured body** with proper header hierarchy
+4. **Natural USP integration** (reference market-specific context file)
+5. **Practical information** (prices, parking, tips, season)
+6. **FAQ section** (3-7 questions with brief answers)
+7. **Appropriate CTA** (strength matches content type)
+8. **SEO metadata section** at end with title tag, meta description, slug, keywords, internal link suggestions
 
-**Tone calibration:**
-- Renter content: Warm, inspiring, evoke feelings. Paint pictures with sensory language.
-- Owner content: Professional, data-driven, concrete. Focus on ROI, optimization, numbers.
+#### Tone calibration by market:
 
-**Format selection based on proven patterns:**
-- Activities → Listicle (Topp 5-10) with 150-200 words per item
+**Norway:**
+- Renter content: Warm, inspiring, informal "du" tone. Paint pictures with sensory language. Evoke feelings of adventure and nature.
+- Owner content: Friendly but concrete, informal "du" tone. Focus on practical income examples, optimization tips.
+
+**France:**
+- Renter content (B2B): Professional, authoritative, formal "vous" tone. Data-driven, clear benefits. Regulatory accuracy.
+- Renter content (Consumer): Warmer but still formal "vous" (L'Adventure Lab style). Inspiring but practical. Professional credibility maintained.
+- Owner content: Analytical, formal "vous" tone. Focus on ROI, fiscal implications, concrete numbers. Professional skepticism requires data.
+
+**Critical French typography:**
+- Space before: ! ? ; :
+- Guillemets: « texte »
+- Numbers: 10 000 (space for thousands)
+- Dates: 21 novembre 2025
+
+#### Format selection based on proven patterns:
+
+**Norway:**
+- Activities → Listicle "Topp 5-10..." (150-200 words per item, 1,200-1,800 total)
 - Owner guides → How-to with comprehensive depth (1,800-2,500 words)
 - Use-cases → Problem-solution (800-1,200 words)
 - City guides → Comprehensive listicle (20-30 items, 2,000-3,000 words)
 
-Reference `blog_performance_insights.md` for format-specific best practices.
+**France:**
+- Professional guides → "Guide complet : [Topic] en 2025" (1,800-2,500 words)
+- Regulatory explainers → "Tout savoir sur [Regulation] en 2025" (2,000-3,000 words)
+- TCO calculators → "[Option A] vs [Option B] : coût réel" (1,500-2,000 words)
+- Consumer inspiration → L'Adventure Lab style narrative (1,500-2,000 words)
+- City guides → Geographic + compliance focus (2,000-3,000 words)
 
-### Step 7: Metadata Footer Generation
+Reference market-specific `performance_data` files for format-specific best practices.
 
-**REQUIRED for all optimized content.** Generate the complete metadata footer using the template in `seo_aeo_best_practices.md` Part 8.
+### Step 7: Metadata Footer Generation (REQUIRED)
 
-The metadata footer must include:
+**Every optimized article must include a structured metadata footer for tracking.**
 
-**Core SEO Section:**
-- Title tag (50-60 chars)
-- Meta description (150-160 chars with CTA)
-- Slug
-- Primary and secondary keywords
+Reference `seo_aeo_best_practices.md` Part 8 for full template. Output format:
 
-**Content Structure Section:**
-- H1, H2 count
-- Question headers listed
-- Answer-first section count
-- Word count, FAQ question count
+```markdown
+---
 
-**CTA Details Section:**
-- Exact CTA text
-- CTA type (soft/medium/strong)
-- CTA trigger (value/urgency/exclusivity/clarity)
-- Placement and target URL
+## SEO/AEO Metadata
 
-**AEO Readiness Section:**
-- FAQ section presence
-- Featured snippet optimization status
-- AI Overview readiness
-- Schema types to implement
+### Core SEO
+| Field | Value |
+|-------|-------|
+| Title Tag | [50-60 chars with primary keyword] |
+| Meta Description | [150-160 chars with CTA] |
+| Slug | [url-friendly-slug-with-keyword] |
+| Primary Keyword | [main target keyword] |
+| Secondary Keywords | [keyword 1, keyword 2, keyword 3] |
 
-**Business & Tracking Section:**
-- Content type, target audience, market
-- Business fit score (1-5)
-- Predicted engagement
-- Internal linking opportunities
+### Content Structure
+| Field | Value |
+|-------|-------|
+| H1 | [exact article title] |
+| H2 Count | [number of H2 sections] |
+| Question Headers | [list of H2s phrased as questions] |
+| Answer-First Sections | [Yes/No, count of 40-60 word answer blocks] |
+| Word Count | [total] |
 
-**JSON-LD Schema Section:**
-- Complete, validated schema markup
-- Article schema (always)
-- FAQPage schema (if 3+ Q&As)
-- HowTo schema (if step-by-step guide)
+### CTA Details
+| Field | Value |
+|-------|-------|
+| Primary CTA | [exact CTA text] |
+| CTA Type | [soft / medium / strong] |
+| CTA Placement | [end only / middle + end] |
+
+### AEO Readiness
+| Field | Value |
+|-------|-------|
+| FAQ Section | [Yes/No, question count] |
+| Featured Snippet Optimized | [Yes/No] |
+| Schema Types | [Article, FAQPage, HowTo] |
+
+### Business & Tracking
+| Field | Value |
+|-------|-------|
+| Content Type | [listicle / guide / use-case / city guide] |
+| Target Audience | [renter / owner] |
+| Market | [NO / FR] |
+| Business Fit Score | [1-5] |
+
+### JSON-LD Schema
+[Include generated schema code from schema_templates.md]
+```
 
 ## Using Bundled References
 
-### getaround_master_context.md
-**Read FIRST** (always) - Contains:
-- Getaround products and delivery methods
-- Competitors and market positioning
-- USPs (7 key USPs to integrate)
-- Search behavior (renter vs. owner queries)
-- Tone of voice guidelines (renter vs. owner differentiation)
-- Key terminology
+### Reference structure:
+```
+references/
+├── shared/
+│   ├── seo_aeo_best_practices.md     # Universal SEO/AEO guidelines (Parts 1-10)
+│   ├── aeo_header_patterns.md        # AEO header optimization, answer-first structure
+│   ├── cta_framework.md              # CTA psychology, strength matrix, power words
+│   ├── schema_templates.md           # JSON-LD templates (Article, FAQPage, HowTo)
+│   ├── owner_content_principles.md   # Universal owner content guidelines
+│   ├── product_glossary.json         # Multilingual product terminology
+│   └── country_config.json           # Structured country configuration
+├── norway/
+│   ├── market_context_no.md          # Norwegian market specifics + fleet data
+│   ├── tone_guide_no.md              # Norwegian tone patterns ("du")
+│   ├── performance_data_no.md        # Norwegian blog benchmarks
+│   └── owner_content_guide_no.md     # NO-specific owner content guide
+└── france/
+    ├── market_context_fr.md          # French market specifics + fleet data
+    ├── tone_guide_fr.md              # French tone (L'Adventure Lab + "vous")
+    ├── performance_data_fr.md        # French blog benchmarks (B2B data)
+    ├── keyword_strategy_fr.md        # 7 keyword pillars with volumes
+    └── owner_content_guide_fr.md     # FR-specific owner content guide
+```
 
-**Use for:**
-- Understanding Getaround's offerings
-- Calibrating tone for audience
-- Identifying USPs to weave naturally
-- Validating product-content fit
+After market detection (Step 0), load market-specific references.
 
-### blog_performance_insights.md
-**Read FIRST** (always) - Contains:
-- What content types perform well (listicles, owner guides)
-- What fails (case studies without data, content-product mismatch)
-- Engagement benchmarks by content type
-- Geographic priorities (Oslo >> Tromsø > Bergen)
-- Proven format patterns
-- Business fit validation framework
+### Norway References
 
-**Use for:**
-- Selecting optimal format (listicle vs. guide vs. use-case)
-- Setting engagement targets
-- Validating business fit
-- Understanding what Getaround data shows works/doesn't work
+**norway/market_context_no.md** - Contains:
+- Getaround products and delivery methods (Norway focus)
+- Fleet data (~6,800 active cars, top regions)
+- Product details (Connect 290 kr/mnd, If insurance, max value 1M NOK)
+- Norway-exclusive features (Native Connect, Langtidsleie, Bobil)
+- Norwegian competitors (Hyre, traditional rental)
+- USPs for Norwegian market
+- Norwegian search behavior patterns
+- Norwegian terminology
 
-### seo_aeo_best_practices.md
-**Read AS NEEDED** (reference during optimization) - Contains:
-- Traditional SEO fundamentals (keywords, titles, meta, internal linking)
+**norway/performance_data_no.md** - Contains:
+- What works in Norway (activity listicles dominate)
+- What fails (case studies without data)
+- Engagement benchmarks for Norway (65-80% activities, 75-90% owner guides)
+- Geographic priorities (Oslo >> Tromsø > Bergen > Stavanger)
+- Proven Norwegian formats ("Topp 5/10..." listicles)
+
+**norway/tone_guide_no.md** - Contains:
+- "Du" form guidelines
+- Warm, adventurous vocabulary
+- Norwegian expressions and idioms
+- Reader-first principle guidelines
+- CTA patterns for Norwegian audience
+
+**norway/owner_content_guide_no.md** - Contains (load for owner content only):
+- Connect terminology in Norwegian ("låse opp via Getaround-appen")
+- Native Connect formulation
+- SmartPrising, Instant booking in Norwegian
+- Income examples in NOK by car type and city
+- Tax references (Skatteetaten)
+- Insurance reference (If)
+- Norway-specific checklist
+
+### France References
+
+**france/market_context_fr.md** - Contains:
+- Getaround products and delivery methods (France focus)
+- Fleet data (~23,200 active vehicles, top cities)
+- Product details (Connect 29€/mnd, AXA insurance, max value 50k€)
+- Features NOT available in France (Native Connect, Long-term, Motorhome)
+- French competitors (Turo main, traditional strong)
+- USPs for French market (ZFE compliance, professional solutions, cross-border)
+- French search behavior patterns (B2B/professional dominant)
+- French terminology and glossary
+
+**france/performance_data_fr.md** - Contains:
+- What works in France (B2B/professional guides dominate)
+- Top performers (Déplacement professionnel, Redevance, regulatory content)
+- Engagement benchmarks for France (70-85% B2B, 65-80% regulatory)
+- Geographic priorities (Paris, Lyon, Marseille focus)
+- Proven French formats (Professional guides, regulatory explainers, TCO calculators)
+
+**france/keyword_strategy_fr.md** - Contains:
+- 7 keyword pillars with volumes and priorities
+- Professional/B2B keywords (top priority)
+- Regulatory keywords (ZFE, Crit'Air, TVS)
+- Vehicle type keywords, city keywords, international travel
+- Quick win opportunities
+
+**france/tone_guide_fr.md** - Contains:
+- L'Adventure Lab tone patterns (gold standard for consumer content)
+- 5 core principles: Invite don't sell, Accessible aspiration, Authentic French voice, Strategic warmth, Practical poetry
+- "Vous" form with warmth guidelines
+- Reader-first principle guidelines (« Lecteur d'abord »)
+- French vocabulary banks by content type
+- Opening hooks and CTA formulas
+- Typography rules
+
+**france/owner_content_guide_fr.md** - Contains (load for owner content only):
+- Connect terminology in French ("déverrouiller via l'application Getaround")
+- Tarification intelligente (SmartPrising)
+- Income examples in EUR by car type and city
+- Tax references (impots.gouv.fr, URSSAF)
+- Insurance reference (AXA)
+- ZFE context for owner content (Crit'Air advantage)
+- Entrepreneurs program details
+- France-specific checklist
+
+### Universal References (Shared)
+
+**shared/seo_aeo_best_practices.md** - Contains (Parts 1-10):
+- Part 1-6: Traditional SEO fundamentals (keywords, titles, meta, internal linking)
+- Hybrid headline strategy (H2=questions, H3=statements with data)
+- External reference guidelines (volatile vs stable data handling)
 - AEO optimization (FAQ schema, Q&A structure, E-E-A-T, unique data)
-- Getaround-specific integration (USP weaving, CTA guidelines, tone calibration)
+- Getaround-specific integration (USP weaving, CTA guidelines)
 - Markdown formatting for Ghost CMS
-- Quality checklists (SEO, AEO, content, format, Getaround-specific)
+- Quality checklists (SEO, AEO, content, format)
 - Common mistakes to avoid
-- **NEW: Part 7** - Cross-references to advanced guides
-- **NEW: Part 8** - Metadata footer template
+- Part 7: Cross-references to advanced guides
+- Part 8: Metadata Footer Template (for spreadsheet tracking)
+- Part 9: AI "Interview" Method for unique content
+- Part 10: Internal Linking Strategy with prompt template
 
-**Use for:**
-- Technical SEO requirements during optimization
-- AEO enhancement guidelines
-- Output formatting standards
-- Quality validation
-- **Metadata footer generation** (Part 8 - required for all content)
-
-**Structure:** This reference is comprehensive (8 parts). Use search/grep to find specific sections:
-- Part 1: Traditional SEO
-- Part 2: AEO
-- Part 3: Getaround Integration
-- Part 4: Markdown Formatting
-- Part 5: Quality Checklist
-- Part 6: Common Mistakes
-- Part 7: Advanced Reference Guides (cross-links)
-- Part 8: Metadata Footer Template
-
-### cta_framework.md (NEW)
-**Read when selecting/writing CTAs** - Contains:
-- CTA psychology principles (clarity, urgency, value, exclusivity)
-- CTA strength matrix by content type and intent
-- Power words for car-sharing (Norwegian + French)
-- CTA templates library with examples
-- Placement rules and strategic patterns
-- CTA testing checklist and quality scoring
-
-**Use for:**
-- Selecting appropriate CTA strength (soft/medium/strong)
-- Choosing CTA trigger (value/urgency/exclusivity/clarity)
-- Writing CTA copy with power words
-- Determining CTA placement
-- Adapting CTAs for NO vs FR markets
-
-### aeo_header_patterns.md (NEW)
-**Read when structuring headers** - Contains:
-- Question-format header templates
+**shared/aeo_header_patterns.md** - Contains (load for AEO optimization):
+- Part 1-4: Why header structure matters for AI Overviews
+- Question-format header templates (Hva/Hvordan/Hvor mye, Qu'est-ce que/Comment/Combien)
 - Answer-first paragraph structure (40-60 word format)
-- Header formulas by content type
-- Featured snippet optimization (paragraph/list/table)
-- Semantic chunking guidelines
-- Before/after transformation examples
+- Featured snippet optimization (paragraph, list, table types)
+- Part 5: Semantic chunking and PAA/Featured Snippet alignment
+- Part 6-8: Header hierarchy best practices, Getaround examples, transformations
+- Part 9: H2 Content Injection technique for capturing related queries
 
-**Use for:**
-- Converting headers to question format
-- Writing 40-60 word answer blocks
-- Optimizing for featured snippets
-- Structuring content for AI Overview citation
-- Applying the right header formula for content type
+**shared/cta_framework.md** - Contains (load for content creation):
+- Part 1-2: CTA psychology principles (Clarity, Urgency, Value, Exclusivity)
+- CTA strength matrix by content type and intent
+- Part 3: Power words for car-sharing (NO/FR)
+- Part 4-5: CTA placement rules and templates library
+- Part 6-8: CTA copywriting formulas, testing checklist, common mistakes
 
-### schema_templates.md (NEW)
-**Read when generating schema markup** - Contains:
-- Article/BlogPosting JSON-LD template (required for all)
-- FAQPage JSON-LD template (for 3+ Q&A sections)
-- HowTo JSON-LD template (for step-by-step guides)
-- Combined schema examples
-- Validation checklist
-- Ghost CMS integration instructions
+**shared/schema_templates.md** - Contains (load for schema generation):
+- Part 1: Article/BlogPosting JSON-LD template
+- Part 2: FAQPage JSON-LD template with Getaround examples
+- Part 3: HowTo JSON-LD template
+- Part 4: Combined schema examples
+- Part 5: Validation checklist (Google Rich Results Test)
+- Part 6: Ghost CMS integration instructions
 
-**Use for:**
-- Generating JSON-LD schema markup
-- Combining multiple schema types
-- Validating schema before publication
-- Adding schema to Ghost CMS
+**shared/owner_content_principles.md** - Contains (load for owner content only):
+- Information Hierarchy Rule (Answer First, Explain After)
+- Headline Strategy (H2 questions, H3 statements)
+- Reader-First Principle (situation, search, concerns)
+- External Reference Guidelines (volatile vs stable data)
+- Technical Term Handling (define at first use)
+- Article Structure Template (owner guides)
+- Quality checklist for owner content
+
+**shared/product_glossary.json** - Contains (reference as needed):
+- Multilingual product terminology (EN/NO/FR)
+- Correct term translations and definitions
+- "Do not translate" markers for brand terms
+- Market availability indicators
+
+**shared/country_config.json** - Contains (reference as needed):
+- Structured country configuration
+- Feature availability matrix
+- Fleet data by country
+- Pricing and limits per market
 
 ## Output Requirements
 
@@ -402,15 +578,15 @@ Provide:
 
 **Every optimization must achieve:**
 
-✅ **Business fit validated** - Not vanity traffic  
-✅ **Search intent matched** - Content answers what user searched for  
-✅ **Keywords properly placed** - H1, intro, headers, conclusion, meta  
-✅ **Structure optimized** - Scannable, mobile-friendly, proper hierarchy  
-✅ **AEO-ready** - FAQ section, Q&A structure, E-E-A-T signals  
-✅ **Getaround-integrated** - USPs woven naturally, not pushy  
-✅ **Tone calibrated** - Matches audience (renter vs. owner)  
-✅ **Format proven** - Uses patterns from blog_performance_insights.md  
-✅ **Actionable** - User can implement recommendations immediately  
+✅ **Business fit validated** - Not vanity traffic
+✅ **Search intent matched** - Content answers what user searched for
+✅ **Keywords properly placed** - H1, intro, headers, conclusion, meta
+✅ **Structure optimized** - Scannable, mobile-friendly, proper hierarchy
+✅ **AEO-ready** - FAQ section, Q&A structure, E-E-A-T signals
+✅ **Getaround-integrated** - USPs woven naturally, not pushy
+✅ **Tone calibrated** - Matches market (du/vous) and audience (renter/owner)
+✅ **Format proven** - Uses patterns from market-specific performance data
+✅ **Actionable** - User can implement recommendations immediately
 
 **Balance principle:** Always optimize for BOTH search engines AND humans. Never sacrifice readability for SEO.
 
@@ -421,7 +597,7 @@ Provide:
 - Assess if pivot possible (change angle to Getaround relevance)
 - If no pivot: recommend pruning/redirecting
 
-**Case 2: Low-traffic but high-engagement article**  
+**Case 2: Low-traffic but high-engagement article**
 - Content is good, ranking is the issue
 - Focus on: backlinks, internal links, on-page SEO
 - Don't rewrite content, fix distribution/visibility
@@ -432,23 +608,30 @@ Provide:
 - Consider annual update strategy
 
 **Case 4: Geographic mismatch**
-- Bergen/Stavanger/Trondheim: Good engagement, but low volume compared to Oslo
+- Norway: Bergen/Stavanger/Trondheim have good engagement but low volume vs Oslo
+- France: Secondary cities (Nice, Toulouse, Bordeaux) lower priority than Paris/Lyon/Marseille
 - Validate if worth optimizing based on market priority
-- Consider clustering (one comprehensive "activities in Norway" with city sections)
+- Consider clustering strategy if appropriate
 
 **Case 5: Existing good performers**
 - Focus on AEO enhancements (FAQ, unique data, E-E-A-T)
 - Don't over-optimize (if it works, minor tweaks only)
 - Protect rankings with freshness updates
+- France: Annual updates mandatory for regulatory content (year-stamp 2025 → 2026)
 
 ## Critical Reminders
 
-⚠️ **ALWAYS validate business fit BEFORE optimizing** - Avoid vanity traffic  
-⚠️ **Load all three references at start** - Context is essential  
-⚠️ **Differentiate renter vs. owner content** - Tone and approach vary dramatically  
-⚠️ **Use proven formats from data** - Listicles work, case studies don't  
-⚠️ **Balance SEO and AEO** - Optimize for both traditional search AND AI overviews  
-⚠️ **Be actionable** - Every recommendation must be concrete and implementable  
-⚠️ **Prioritize ruthlessly** - Don't overwhelm user with 50 issues  
+⚠️ **ALWAYS detect market FIRST (Step 0)** - Norway vs France requires completely different approach
+⚠️ **ALWAYS validate business fit BEFORE optimizing** - Avoid vanity traffic
+⚠️ **Load market-specific references** - Norway needs 3 files, France needs 4 files, plus universal SEO guide
+⚠️ **Apply correct tone** - Norway: informal "du", France: formal "vous" with warmth
+⚠️ **Apply correct content focus** - Norway: consumer activities, France: B2B/professional
+⚠️ **Use proven formats from data** - Norway: listicles, France: professional guides/regulatory
+⚠️ **Balance SEO and AEO** - Optimize for both traditional search AND AI overviews
+⚠️ **Be actionable** - Every recommendation must be concrete and implementable
+⚠️ **Prioritize ruthlessly** - Don't overwhelm user with 50 issues
 
-**Success metric:** Optimized content should achieve 65-90% engagement rate (depending on type) and drive measurable conversions (bookings or owner registrations).
+**Success metrics by market:**
+- Norway: 65-80% engagement (activities), 75-90% (owner guides), 1,200-1,800 words typical
+- France: 70-85% engagement (B2B), 65-80% (regulatory), 1,800-2,500 words typical
+- Both: Drive measurable conversions (bookings or owner registrations)
