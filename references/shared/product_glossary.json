@@ -1,0 +1,1436 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2025-12",
+  "terms": [
+    {
+      "id": "getaround_connect",
+      "category": "product",
+      "translations": {
+        "en": {
+          "term": "Getaround Connect",
+          "definition": "Hardware device installed in the vehicle enabling remote lock/unlock via smartphone app, GPS tracking, and immobilizer functionality"
+        },
+        "no": {
+          "term": "Getaround Connect",
+          "definition": "Hardware-enhet installert i bilen som muliggjør fjernlåsing/opplåsing via app, GPS-sporing og startsperre"
+        },
+        "fr": {
+          "term": "Getaround Connect",
+          "definition": "Boîtier électronique installé dans le véhicule permettant le déverrouillage/verrouillage à distance via l'application, la géolocalisation et le système anti-démarrage"
+        }
+      },
+      "doNotTranslate": true,
+      "relatedTerms": ["native_connect", "key_exchange"]
+    },
+    {
+      "id": "native_connect",
+      "category": "product",
+      "translations": {
+        "en": {
+          "term": "Native Connect",
+          "definition": "Integration via Smartcar API for compatible vehicles (Tesla and others), providing same functionality as hardware Connect without physical installation"
+        },
+        "no": {
+          "term": "Native Connect",
+          "definition": "Integrasjon via Smartcar API for kompatible biler (Tesla og andre), som gir samme funksjonalitet som hardware Connect uten fysisk installasjon"
+        },
+        "fr": {
+          "term": "Native Connect",
+          "definition": "Intégration via l'API Smartcar pour les véhicules compatibles - non disponible en France"
+        }
+      },
+      "doNotTranslate": true,
+      "availableIn": ["NO"],
+      "relatedTerms": ["getaround_connect", "smartcar"]
+    },
+    {
+      "id": "key_exchange",
+      "category": "product",
+      "translations": {
+        "en": {
+          "term": "Key Exchange",
+          "definition": "Traditional rental method where owner and renter meet in person to exchange keys"
+        },
+        "no": {
+          "term": "Nøkkeloverlevering",
+          "definition": "Tradisjonell utleiemetode der utleier og leietaker møtes fysisk for å utveksle nøkler"
+        },
+        "fr": {
+          "term": "Remise de clés",
+          "definition": "Méthode de location traditionnelle où le propriétaire et le locataire se rencontrent pour l'échange des clés"
+        }
+      },
+      "doNotTranslate": false,
+      "relatedTerms": ["getaround_connect"]
+    },
+    {
+      "id": "instant_booking",
+      "category": "product",
+      "translations": {
+        "en": {
+          "term": "Instant Booking",
+          "definition": "Immediate booking confirmation without waiting for owner approval, typically available for Connect vehicles"
+        },
+        "no": {
+          "term": "Instant booking",
+          "definition": "Umiddelbar bookingbekreftelse uten å vente på utleiers godkjenning, typisk tilgjengelig for Connect-biler"
+        },
+        "fr": {
+          "term": "Réservation instantanée",
+          "definition": "Confirmation immédiate de la réservation sans attendre l'approbation du propriétaire, généralement disponible pour les véhicules Connect"
+        }
+      },
+      "doNotTranslate": false,
+      "relatedTerms": ["getaround_connect"]
+    },
+    {
+      "id": "long_term_rental",
+      "category": "product",
+      "translations": {
+        "en": {
+          "term": "Long-Term Rental",
+          "definition": "Rental period of 30-180 days, booked in 30-day increments with 2,000 km included per month"
+        },
+        "no": {
+          "term": "Langtidsleie",
+          "definition": "Leieperiode på 30-180 dager, booket i 30-dagers perioder med 2 000 km inkludert per måned"
+        },
+        "fr": {
+          "term": "Location longue durée",
+          "definition": "Période de location de 30 à 180 jours - non disponible en France"
+        }
+      },
+      "doNotTranslate": false,
+      "availableIn": ["NO"]
+    },
+    {
+      "id": "protection_plan",
+      "category": "insurance",
+      "translations": {
+        "en": {
+          "term": "Protection Plan",
+          "definition": "Optional insurance coverage tiers (Minimum, Plus, Premium) affecting deductible amounts"
+        },
+        "no": {
+          "term": "Beskyttelsesplan",
+          "definition": "Valgfrie forsikringsnivåer (Minimum, Plus, Premium) som påvirker egenandelen"
+        },
+        "fr": {
+          "term": "Plan de protection",
+          "definition": "Niveaux de couverture d'assurance optionnels (Minimum, Plus, Premium) affectant les montants de franchise"
+        }
+      },
+      "doNotTranslate": false,
+      "relatedTerms": ["deductible"]
+    },
+    {
+      "id": "check_in",
+      "category": "process",
+      "translations": {
+        "en": {
+          "term": "Check-in",
+          "definition": "Photo inspection process at rental start - renter takes 8 exterior photos documenting vehicle condition"
+        },
+        "no": {
+          "term": "Innsjekk",
+          "definition": "Fotosjekk-prosess ved leiestart - leietaker tar 8 utvendige bilder som dokumenterer bilens tilstand"
+        },
+        "fr": {
+          "term": "Check-in",
+          "definition": "Processus d'inspection photo au début de la location - le locataire prend 8 photos extérieures documentant l'état du véhicule"
+        }
+      },
+      "doNotTranslate": true,
+      "relatedTerms": ["check_out", "photo_inspection"]
+    },
+    {
+      "id": "check_out",
+      "category": "process",
+      "translations": {
+        "en": {
+          "term": "Check-out",
+          "definition": "Photo inspection process at rental end - renter documents return condition and fuel level"
+        },
+        "no": {
+          "term": "Utsjekk",
+          "definition": "Fotosjekk-prosess ved leieslutt - leietaker dokumenterer returtilstand og drivstoffnivå"
+        },
+        "fr": {
+          "term": "Check-out",
+          "definition": "Processus d'inspection photo à la fin de la location - le locataire documente l'état de retour et le niveau de carburant"
+        }
+      },
+      "doNotTranslate": true,
+      "relatedTerms": ["check_in", "photo_inspection"]
+    },
+    {
+      "id": "crit_air",
+      "category": "regulation",
+      "translations": {
+        "en": {
+          "term": "Crit'Air",
+          "definition": "French air quality certificate/sticker required for driving in Low Emission Zones (ZFE)"
+        },
+        "no": {
+          "term": "Crit'Air",
+          "definition": "Fransk luftkvalitetssertifikat/merke som kreves for kjøring i lavsone-områder (ZFE) i Frankrike"
+        },
+        "fr": {
+          "term": "Crit'Air",
+          "definition": "Certificat qualité de l'air obligatoire pour circuler dans les Zones à Faibles Émissions"
+        }
+      },
+      "doNotTranslate": true,
+      "availableIn": ["FR"],
+      "relatedTerms": ["zfe"]
+    },
+    {
+      "id": "zfe",
+      "category": "regulation",
+      "translations": {
+        "en": {
+          "term": "ZFE (Low Emission Zone)",
+          "definition": "Urban areas with vehicle emission restrictions based on Crit'Air classification"
+        },
+        "no": {
+          "term": "ZFE (lavutslippssone)",
+          "definition": "Byområder med kjørebegrensninger basert på Crit'Air-klassifisering i Frankrike"
+        },
+        "fr": {
+          "term": "ZFE (Zone à Faibles Émissions)",
+          "definition": "Zones urbaines avec restrictions de circulation basées sur la classification Crit'Air"
+        }
+      },
+      "doNotTranslate": true,
+      "availableIn": ["FR"],
+      "relatedTerms": ["crit_air"]
+    },
+    {
+      "id": "entrepreneurs_program",
+      "category": "program",
+      "translations": {
+        "en": {
+          "term": "Getaround Entrepreneurs",
+          "definition": "Support program for professional car-sharing owners with dedicated account management and partner network access"
+        },
+        "no": {
+          "term": "Getaround Entrepreneurs",
+          "definition": "Støtteprogram for profesjonelle bildeleutleiere med dedikert kontoadministrasjon og partnernettverk"
+        },
+        "fr": {
+          "term": "Getaround Entrepreneurs",
+          "definition": "Programme d'accompagnement pour les propriétaires professionnels avec gestionnaire de compte dédié et accès au réseau de partenaires"
+        }
+      },
+      "doNotTranslate": true,
+      "relatedTerms": ["getaround_for_business"]
+    },
+    {
+      "id": "getaround_for_business",
+      "category": "program",
+      "translations": {
+        "en": {
+          "term": "Getaround for Business",
+          "definition": "B2B car-sharing solution for companies with centralized user management and corporate invoicing"
+        },
+        "no": {
+          "term": "Getaround for Business",
+          "definition": "B2B-løsning for bedrifter med sentralisert brukeradministrasjon og bedriftsfakturering"
+        },
+        "fr": {
+          "term": "Getaround for Business",
+          "definition": "Solution d'autopartage B2B pour les entreprises avec gestion centralisée des utilisateurs et facturation entreprise"
+        }
+      },
+      "doNotTranslate": true,
+      "relatedTerms": ["entrepreneurs_program"]
+    },
+    {
+      "id": "smart_pricing",
+      "category": "pricing",
+      "translations": {
+        "en": {
+          "term": "Smart Pricing",
+          "definition": "Dynamic pricing adjustments based on demand, location, and seasonality"
+        },
+        "no": {
+          "term": "Smart prising",
+          "definition": "Dynamiske prisjusteringer basert på etterspørsel, sted og sesong"
+        },
+        "fr": {
+          "term": "Tarification intelligente",
+          "definition": "Ajustements de prix dynamiques basés sur la demande, la localisation et la saisonnalité"
+        }
+      },
+      "doNotTranslate": false
+    },
+    {
+      "id": "roadside_assistance",
+      "category": "insurance",
+      "translations": {
+        "en": {
+          "term": "Roadside Assistance",
+          "definition": "24/7 emergency support included in all rentals"
+        },
+        "no": {
+          "term": "Veihjelp",
+          "definition": "24/7 nødhjelp inkludert i alle leieforhold"
+        },
+        "fr": {
+          "term": "Assistance routière",
+          "definition": "Support d'urgence 24h/24 inclus dans toutes les locations"
+        }
+      },
+      "doNotTranslate": false
+    },
+    {
+      "id": "deductible",
+      "category": "insurance",
+      "translations": {
+        "en": {
+          "term": "Deductible",
+          "definition": "Amount the renter pays out-of-pocket in case of damage, varies by protection plan tier"
+        },
+        "no": {
+          "term": "Egenandel",
+          "definition": "Beløpet leietaker betaler selv ved skade, varierer etter beskyttelsesnivå"
+        },
+        "fr": {
+          "term": "Franchise",
+          "definition": "Montant à la charge du locataire en cas de dommage, varie selon le niveau de protection"
+        }
+      },
+      "doNotTranslate": false,
+      "relatedTerms": ["protection_plan"]
+    },
+    {
+      "id": "owner",
+      "category": "user_type",
+      "translations": {
+        "en": {
+          "term": "Owner",
+          "definition": "Person or company listing their vehicle for rent on Getaround"
+        },
+        "no": {
+          "term": "Utleier",
+          "definition": "Person eller bedrift som leier ut bilen sin på Getaround"
+        },
+        "fr": {
+          "term": "Propriétaire",
+          "definition": "Personne ou entreprise qui met son véhicule en location sur Getaround"
+        }
+      },
+      "doNotTranslate": false,
+      "relatedTerms": ["renter"]
+    },
+    {
+      "id": "renter",
+      "category": "user_type",
+      "translations": {
+        "en": {
+          "term": "Renter",
+          "definition": "Person renting a vehicle through Getaround"
+        },
+        "no": {
+          "term": "Leietaker",
+          "definition": "Person som leier en bil gjennom Getaround"
+        },
+        "fr": {
+          "term": "Locataire",
+          "definition": "Personne qui loue un véhicule via Getaround"
+        }
+      },
+      "doNotTranslate": false,
+      "relatedTerms": ["owner"]
+    },
+    {
+      "id": "car_sharing",
+      "category": "concept",
+      "translations": {
+        "en": {
+          "term": "Car-sharing",
+          "definition": "Shared vehicle access model where multiple users share vehicles instead of individual ownership"
+        },
+        "no": {
+          "term": "Bildeling",
+          "definition": "Delt biltilgangsmodell der flere brukere deler biler i stedet for individuelt eierskap"
+        },
+        "fr": {
+          "term": "Autopartage",
+          "definition": "Modèle d'accès partagé aux véhicules où plusieurs utilisateurs partagent des voitures au lieu d'une propriété individuelle"
+        }
+      },
+      "doNotTranslate": false
+    },
+    {
+      "id": "p2p",
+      "category": "concept",
+      "translations": {
+        "en": {
+          "term": "P2P (Peer-to-Peer)",
+          "definition": "Business model where private individuals transact directly with each other, facilitated by a platform"
+        },
+        "no": {
+          "term": "P2P (person-til-person)",
+          "definition": "Forretningsmodell der privatpersoner handler direkte med hverandre, tilrettelagt av en plattform"
+        },
+        "fr": {
+          "term": "P2P (Pair à pair / Entre particuliers)",
+          "definition": "Modèle d'affaires où des particuliers effectuent des transactions directement entre eux, facilitées par une plateforme"
+        }
+      },
+      "doNotTranslate": false
+    },
+    {
+      "id": "immobilizer",
+      "category": "technology",
+      "translations": {
+        "en": {
+          "term": "Immobilizer",
+          "definition": "Anti-theft device that prevents the engine from starting without proper authorization"
+        },
+        "no": {
+          "term": "Startsperre",
+          "definition": "Tyverisikring som hindrer motoren i å starte uten riktig autorisasjon"
+        },
+        "fr": {
+          "term": "Système anti-démarrage",
+          "definition": "Dispositif antivol empêchant le démarrage du moteur sans autorisation appropriée"
+        }
+      },
+      "doNotTranslate": false
+    },
+    {
+      "id": "autosync",
+      "category": "integration",
+      "translations": {
+        "en": {
+          "term": "Autosync",
+          "definition": "Norwegian toll provider with Getaround integration for automatic toll assignment (formerly Fremtind)"
+        },
+        "no": {
+          "term": "Autosync",
+          "definition": "Norsk bompengeleverandør med Getaround-integrasjon for automatisk bompengetilordning (tidligere Fremtind)"
+        },
+        "fr": {
+          "term": "Autosync",
+          "definition": "Fournisseur de péage norvégien avec intégration Getaround - non applicable en France"
+        }
+      },
+      "doNotTranslate": true,
+      "availableIn": ["NO"],
+      "relatedTerms": ["flyt"]
+    },
+    {
+      "id": "flyt",
+      "category": "integration",
+      "translations": {
+        "en": {
+          "term": "Flyt",
+          "definition": "Norwegian toll provider with Getaround integration for automatic toll assignment"
+        },
+        "no": {
+          "term": "Flyt",
+          "definition": "Norsk bompengeleverandør med Getaround-integrasjon for automatisk bompengetilordning"
+        },
+        "fr": {
+          "term": "Flyt",
+          "definition": "Fournisseur de péage norvégien avec intégration Getaround - non applicable en France"
+        }
+      },
+      "doNotTranslate": true,
+      "availableIn": ["NO"],
+      "relatedTerms": ["autosync"]
+    },
+    {
+      "id": "rental",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Rental", "definition": "A vehicle rental transaction" },
+        "no": { "term": "Leieforhold", "definition": "En bilutleietransaksjon" },
+        "fr": { "term": "Location", "definition": "Une transaction de location de véhicule" }
+      }
+    },
+    {
+      "id": "booking",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Booking", "definition": "A reservation for a vehicle" },
+        "no": { "term": "Booking", "definition": "En reservasjon for et kjøretøy" },
+        "fr": { "term": "Réservation", "definition": "Une réservation pour un véhicule" }
+      }
+    },
+    {
+      "id": "rental_request",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Rental request", "definition": "Request sent to owner for non-instant booking vehicles" },
+        "no": { "term": "Leieforespørsel", "definition": "Forespørsel sendt til utleier for biler uten instant booking" },
+        "fr": { "term": "Demande de location", "definition": "Demande envoyée au propriétaire pour les véhicules sans réservation instantanée" }
+      }
+    },
+    {
+      "id": "booking_price",
+      "category": "pricing",
+      "translations": {
+        "en": { "term": "Booking price", "definition": "Total price for the rental" },
+        "no": { "term": "Bookingpris", "definition": "Totalpris for leieforholdet" },
+        "fr": { "term": "Prix de réservation", "definition": "Prix total de la location" }
+      }
+    },
+    {
+      "id": "daily_price",
+      "category": "pricing",
+      "translations": {
+        "en": { "term": "Daily price", "definition": "Price per day for rental" },
+        "no": { "term": "Dagspris", "definition": "Pris per dag for utleie" },
+        "fr": { "term": "Prix journalier", "definition": "Prix par jour de location" }
+      }
+    },
+    {
+      "id": "insurance",
+      "category": "insurance",
+      "translations": {
+        "en": { "term": "Insurance", "definition": "Coverage for vehicle and liability" },
+        "no": { "term": "Forsikring", "definition": "Dekning for kjøretøy og ansvar" },
+        "fr": { "term": "Assurance", "definition": "Couverture pour le véhicule et la responsabilité" }
+      }
+    },
+    {
+      "id": "coverage_options",
+      "category": "insurance",
+      "translations": {
+        "en": { "term": "Coverage options", "definition": "Available insurance protection levels" },
+        "no": { "term": "Dekningsalternativer", "definition": "Tilgjengelige forsikringsbeskyttelsesnivåer" },
+        "fr": { "term": "Options de couverture", "definition": "Niveaux de protection d'assurance disponibles" }
+      }
+    },
+    {
+      "id": "coverage_amount",
+      "category": "insurance",
+      "translations": {
+        "en": { "term": "Coverage amount", "definition": "Maximum amount covered by insurance" },
+        "no": { "term": "Dekningsbeløp", "definition": "Maksimalt beløp dekket av forsikringen" },
+        "fr": { "term": "Montant de couverture", "definition": "Montant maximum couvert par l'assurance" }
+      }
+    },
+    {
+      "id": "cable",
+      "category": "ev_charging",
+      "translations": {
+        "en": { "term": "Cable", "definition": "Charging cable for electric vehicles" },
+        "no": { "term": "Kabel", "definition": "Ladekabel for elektriske kjøretøy" },
+        "fr": { "term": "Câble", "definition": "Câble de recharge pour véhicules électriques" }
+      }
+    },
+    {
+      "id": "charger",
+      "category": "ev_charging",
+      "translations": {
+        "en": { "term": "Charger", "definition": "Device for charging electric vehicles" },
+        "no": { "term": "Lader", "definition": "Enhet for lading av elektriske kjøretøy" },
+        "fr": { "term": "Chargeur", "definition": "Appareil pour recharger les véhicules électriques" }
+      }
+    },
+    {
+      "id": "charging_station",
+      "category": "ev_charging",
+      "translations": {
+        "en": { "term": "Charging station", "definition": "Location with charging infrastructure" },
+        "no": { "term": "Ladestasjon", "definition": "Sted med ladeinfrastruktur" },
+        "fr": { "term": "Station de recharge", "definition": "Lieu avec infrastructure de recharge" }
+      }
+    },
+    {
+      "id": "charging_card",
+      "category": "ev_charging",
+      "translations": {
+        "en": { "term": "Charging card", "definition": "Card for accessing charging stations" },
+        "no": { "term": "Ladekort", "definition": "Kort for tilgang til ladestasjoner" },
+        "fr": { "term": "Carte de recharge", "definition": "Carte pour accéder aux stations de recharge" }
+      }
+    },
+    {
+      "id": "charging_chip",
+      "category": "ev_charging",
+      "translations": {
+        "en": { "term": "Charging chip", "definition": "RFID chip for charging access" },
+        "no": { "term": "Ladebrikke", "definition": "RFID-brikke for ladetilgang" },
+        "fr": { "term": "Badge de recharge", "definition": "Badge RFID pour accès à la recharge" }
+      }
+    },
+    {
+      "id": "range",
+      "category": "ev_charging",
+      "translations": {
+        "en": { "term": "Range", "definition": "Distance a vehicle can travel on a full charge/tank" },
+        "no": { "term": "Rekkevidde", "definition": "Distanse et kjøretøy kan kjøre på full lading/tank" },
+        "fr": { "term": "Autonomie", "definition": "Distance qu'un véhicule peut parcourir avec une charge/un plein complet" }
+      }
+    },
+    {
+      "id": "electric_car",
+      "category": "vehicle_type",
+      "translations": {
+        "en": { "term": "Electric car", "definition": "Vehicle powered by electric motor" },
+        "no": { "term": "Elbil", "definition": "Kjøretøy drevet av elektrisk motor" },
+        "fr": { "term": "Voiture électrique", "definition": "Véhicule alimenté par un moteur électrique" }
+      }
+    },
+    {
+      "id": "hybrid",
+      "category": "vehicle_type",
+      "translations": {
+        "en": { "term": "Hybrid", "definition": "Vehicle with both electric and combustion engine" },
+        "no": { "term": "Hybrid", "definition": "Kjøretøy med både elektrisk og forbrenningsmotor" },
+        "fr": { "term": "Hybride", "definition": "Véhicule avec moteur électrique et à combustion" }
+      }
+    },
+    {
+      "id": "fuel_type",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Fuel type", "definition": "Type of fuel the vehicle uses" },
+        "no": { "term": "Drivstofftype", "definition": "Type drivstoff kjøretøyet bruker" },
+        "fr": { "term": "Type de carburant", "definition": "Type de carburant utilisé par le véhicule" }
+      }
+    },
+    {
+      "id": "fuel_level",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Fuel level", "definition": "Current amount of fuel in tank" },
+        "no": { "term": "Drivstoffnivå", "definition": "Nåværende mengde drivstoff i tanken" },
+        "fr": { "term": "Niveau de carburant", "definition": "Quantité actuelle de carburant dans le réservoir" }
+      }
+    },
+    {
+      "id": "gas",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Gas/Petrol", "definition": "Gasoline fuel" },
+        "no": { "term": "Bensin", "definition": "Bensindrivstoff" },
+        "fr": { "term": "Essence", "definition": "Carburant essence" }
+      }
+    },
+    {
+      "id": "diesel",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Diesel", "definition": "Diesel fuel" },
+        "no": { "term": "Diesel", "definition": "Dieseldrivstoff" },
+        "fr": { "term": "Diesel", "definition": "Carburant diesel" }
+      }
+    },
+    {
+      "id": "transmission",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Transmission", "definition": "Gear system of the vehicle" },
+        "no": { "term": "Girkasse", "definition": "Girsystemet til kjøretøyet" },
+        "fr": { "term": "Transmission", "definition": "Système de vitesses du véhicule" }
+      }
+    },
+    {
+      "id": "automatic",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Automatic", "definition": "Automatic transmission" },
+        "no": { "term": "Automat", "definition": "Automatgir" },
+        "fr": { "term": "Automatique", "definition": "Boîte automatique" }
+      }
+    },
+    {
+      "id": "manual",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Manual", "definition": "Manual transmission" },
+        "no": { "term": "Manuell", "definition": "Manuelt gir" },
+        "fr": { "term": "Manuelle", "definition": "Boîte manuelle" }
+      }
+    },
+    {
+      "id": "doors",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Doors", "definition": "Number of doors" },
+        "no": { "term": "Dører", "definition": "Antall dører" },
+        "fr": { "term": "Portes", "definition": "Nombre de portes" }
+      }
+    },
+    {
+      "id": "seats",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Seats", "definition": "Number of seats" },
+        "no": { "term": "Seter", "definition": "Antall seter" },
+        "fr": { "term": "Sièges", "definition": "Nombre de sièges" }
+      }
+    },
+    {
+      "id": "mileage",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Mileage", "definition": "Distance driven or allowed" },
+        "no": { "term": "Kilometerstand", "definition": "Kjørt distanse eller tillatt distanse" },
+        "fr": { "term": "Kilométrage", "definition": "Distance parcourue ou autorisée" }
+      }
+    },
+    {
+      "id": "included_km",
+      "category": "pricing",
+      "translations": {
+        "en": { "term": "Included kilometers", "definition": "Distance included in rental price" },
+        "no": { "term": "Inkluderte kilometer", "definition": "Distanse inkludert i leieprisen" },
+        "fr": { "term": "Kilomètres inclus", "definition": "Distance incluse dans le prix de location" }
+      }
+    },
+    {
+      "id": "extra_km",
+      "category": "pricing",
+      "translations": {
+        "en": { "term": "Extra kilometers", "definition": "Additional distance beyond included" },
+        "no": { "term": "Ekstra kilometer", "definition": "Tilleggsdistanse utover inkludert" },
+        "fr": { "term": "Kilomètres supplémentaires", "definition": "Distance additionnelle au-delà de l'inclus" }
+      }
+    },
+    {
+      "id": "login",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Log in", "definition": "Sign into account" },
+        "no": { "term": "Logg inn", "definition": "Logg inn på konto" },
+        "fr": { "term": "Se connecter", "definition": "Se connecter au compte" }
+      }
+    },
+    {
+      "id": "logout",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Log out", "definition": "Sign out of account" },
+        "no": { "term": "Logg ut", "definition": "Logg ut av konto" },
+        "fr": { "term": "Se déconnecter", "definition": "Se déconnecter du compte" }
+      }
+    },
+    {
+      "id": "signup",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Sign up", "definition": "Create new account" },
+        "no": { "term": "Registrer deg", "definition": "Opprett ny konto" },
+        "fr": { "term": "S'inscrire", "definition": "Créer un nouveau compte" }
+      }
+    },
+    {
+      "id": "view",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "View", "definition": "Display content" },
+        "no": { "term": "Vis", "definition": "Vis innhold" },
+        "fr": { "term": "Voir", "definition": "Afficher le contenu" }
+      }
+    },
+    {
+      "id": "edit",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Edit", "definition": "Modify content" },
+        "no": { "term": "Redigere", "definition": "Endre innhold" },
+        "fr": { "term": "Modifier", "definition": "Modifier le contenu" }
+      }
+    },
+    {
+      "id": "delete",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Delete", "definition": "Remove content" },
+        "no": { "term": "Slett", "definition": "Fjern innhold" },
+        "fr": { "term": "Supprimer", "definition": "Supprimer le contenu" }
+      }
+    },
+    {
+      "id": "search",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Search", "definition": "Find content" },
+        "no": { "term": "Søk", "definition": "Finn innhold" },
+        "fr": { "term": "Rechercher", "definition": "Trouver du contenu" }
+      }
+    },
+    {
+      "id": "filter",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Filter", "definition": "Narrow results" },
+        "no": { "term": "Filter", "definition": "Begrens resultater" },
+        "fr": { "term": "Filtrer", "definition": "Affiner les résultats" }
+      }
+    },
+    {
+      "id": "date_picker",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Date picker", "definition": "Date selection interface" },
+        "no": { "term": "Datovelger", "definition": "Grensesnitt for datovelging" },
+        "fr": { "term": "Sélecteur de date", "definition": "Interface de sélection de date" }
+      }
+    },
+    {
+      "id": "time_picker",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Time picker", "definition": "Time selection interface" },
+        "no": { "term": "Tidsvelger", "definition": "Grensesnitt for tidsvelging" },
+        "fr": { "term": "Sélecteur d'heure", "definition": "Interface de sélection d'heure" }
+      }
+    },
+    {
+      "id": "pickup_location",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Pickup location", "definition": "Where to collect vehicle" },
+        "no": { "term": "Hentested", "definition": "Hvor kjøretøyet hentes" },
+        "fr": { "term": "Lieu de prise en charge", "definition": "Où récupérer le véhicule" }
+      }
+    },
+    {
+      "id": "return_location",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Return location", "definition": "Where to return vehicle" },
+        "no": { "term": "Retursted", "definition": "Hvor kjøretøyet leveres tilbake" },
+        "fr": { "term": "Lieu de retour", "definition": "Où retourner le véhicule" }
+      }
+    },
+    {
+      "id": "pickup_time",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Pickup time", "definition": "When rental starts" },
+        "no": { "term": "Hentetidspunkt", "definition": "Når leieforholdet starter" },
+        "fr": { "term": "Heure de prise en charge", "definition": "Quand la location commence" }
+      }
+    },
+    {
+      "id": "return_time",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Return time", "definition": "When rental ends" },
+        "no": { "term": "Returtidspunkt", "definition": "Når leieforholdet slutter" },
+        "fr": { "term": "Heure de retour", "definition": "Quand la location se termine" }
+      }
+    },
+    {
+      "id": "availability",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Availability", "definition": "When vehicle can be rented" },
+        "no": { "term": "Tilgjengelighet", "definition": "Når kjøretøyet kan leies" },
+        "fr": { "term": "Disponibilité", "definition": "Quand le véhicule peut être loué" }
+      }
+    },
+    {
+      "id": "calendar",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Calendar", "definition": "Schedule view" },
+        "no": { "term": "Kalender", "definition": "Planvisning" },
+        "fr": { "term": "Calendrier", "definition": "Vue du planning" }
+      }
+    },
+    {
+      "id": "listing",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Listing", "definition": "Vehicle advertisement" },
+        "no": { "term": "Annonse", "definition": "Kjøretøyannonsering" },
+        "fr": { "term": "Annonce", "definition": "Publication du véhicule" }
+      }
+    },
+    {
+      "id": "profile",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Profile", "definition": "User account page" },
+        "no": { "term": "Profil", "definition": "Brukerkontoside" },
+        "fr": { "term": "Profil", "definition": "Page du compte utilisateur" }
+      }
+    },
+    {
+      "id": "review",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Review", "definition": "Rating and feedback" },
+        "no": { "term": "Anmeldelse", "definition": "Vurdering og tilbakemelding" },
+        "fr": { "term": "Avis", "definition": "Note et commentaire" }
+      }
+    },
+    {
+      "id": "rating",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Rating", "definition": "Star score" },
+        "no": { "term": "Vurdering", "definition": "Stjerneskår" },
+        "fr": { "term": "Note", "definition": "Score en étoiles" }
+      }
+    },
+    {
+      "id": "message",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Message", "definition": "Communication between users" },
+        "no": { "term": "Melding", "definition": "Kommunikasjon mellom brukere" },
+        "fr": { "term": "Message", "definition": "Communication entre utilisateurs" }
+      }
+    },
+    {
+      "id": "inbox",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Inbox", "definition": "Message center" },
+        "no": { "term": "Innboks", "definition": "Meldingssenter" },
+        "fr": { "term": "Boîte de réception", "definition": "Centre de messages" }
+      }
+    },
+    {
+      "id": "notification",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Notification", "definition": "Alert or update" },
+        "no": { "term": "Varsling", "definition": "Varsel eller oppdatering" },
+        "fr": { "term": "Notification", "definition": "Alerte ou mise à jour" }
+      }
+    },
+    {
+      "id": "payout",
+      "category": "pricing",
+      "translations": {
+        "en": { "term": "Payout", "definition": "Payment to owner" },
+        "no": { "term": "Utbetaling", "definition": "Betaling til utleier" },
+        "fr": { "term": "Versement", "definition": "Paiement au propriétaire" }
+      }
+    },
+    {
+      "id": "earnings",
+      "category": "pricing",
+      "translations": {
+        "en": { "term": "Earnings", "definition": "Income from rentals" },
+        "no": { "term": "Inntekter", "definition": "Inntekt fra utleie" },
+        "fr": { "term": "Revenus", "definition": "Revenus des locations" }
+      }
+    },
+    {
+      "id": "service_fee",
+      "category": "pricing",
+      "translations": {
+        "en": { "term": "Service fee", "definition": "Platform commission" },
+        "no": { "term": "Serviceavgift", "definition": "Plattformprovisjon" },
+        "fr": { "term": "Frais de service", "definition": "Commission de la plateforme" }
+      }
+    },
+    {
+      "id": "toll",
+      "category": "fees",
+      "translations": {
+        "en": { "term": "Toll", "definition": "Road usage fee" },
+        "no": { "term": "Bomavgift", "definition": "Veibruksavgift" },
+        "fr": { "term": "Péage", "definition": "Frais d'utilisation de la route" }
+      }
+    },
+    {
+      "id": "toll_roads",
+      "category": "fees",
+      "translations": {
+        "en": { "term": "Toll roads", "definition": "Roads with fees" },
+        "no": { "term": "Bomveier", "definition": "Veier med avgift" },
+        "fr": { "term": "Routes à péage", "definition": "Routes avec frais" }
+      }
+    },
+    {
+      "id": "parking",
+      "category": "fees",
+      "translations": {
+        "en": { "term": "Parking", "definition": "Vehicle storage area" },
+        "no": { "term": "Parkering", "definition": "Kjøretøyoppbevaringsområde" },
+        "fr": { "term": "Stationnement", "definition": "Zone de stockage de véhicule" }
+      }
+    },
+    {
+      "id": "damage",
+      "category": "insurance",
+      "translations": {
+        "en": { "term": "Damage", "definition": "Physical harm to vehicle" },
+        "no": { "term": "Skade", "definition": "Fysisk skade på kjøretøyet" },
+        "fr": { "term": "Dommage", "definition": "Dégât physique au véhicule" }
+      }
+    },
+    {
+      "id": "damage_report",
+      "category": "insurance",
+      "translations": {
+        "en": { "term": "Damage report", "definition": "Documentation of damage" },
+        "no": { "term": "Skaderapport", "definition": "Dokumentasjon av skade" },
+        "fr": { "term": "Rapport de dommage", "definition": "Documentation du dommage" }
+      }
+    },
+    {
+      "id": "claim",
+      "category": "insurance",
+      "translations": {
+        "en": { "term": "Claim", "definition": "Insurance request" },
+        "no": { "term": "Krav", "definition": "Forsikringsforespørsel" },
+        "fr": { "term": "Réclamation", "definition": "Demande d'assurance" }
+      }
+    },
+    {
+      "id": "lock",
+      "category": "technology",
+      "translations": {
+        "en": { "term": "Lock", "definition": "Secure vehicle" },
+        "no": { "term": "Lås", "definition": "Sikre kjøretøyet" },
+        "fr": { "term": "Verrouiller", "definition": "Sécuriser le véhicule" }
+      }
+    },
+    {
+      "id": "unlock",
+      "category": "technology",
+      "translations": {
+        "en": { "term": "Unlock", "definition": "Open vehicle" },
+        "no": { "term": "Lås opp", "definition": "Åpne kjøretøyet" },
+        "fr": { "term": "Déverrouiller", "definition": "Ouvrir le véhicule" }
+      }
+    },
+    {
+      "id": "gps",
+      "category": "technology",
+      "translations": {
+        "en": { "term": "GPS", "definition": "Global positioning system" },
+        "no": { "term": "GPS", "definition": "Globalt posisjoneringssystem" },
+        "fr": { "term": "GPS", "definition": "Système de positionnement global" }
+      },
+      "doNotTranslate": true
+    },
+    {
+      "id": "bluetooth",
+      "category": "technology",
+      "translations": {
+        "en": { "term": "Bluetooth", "definition": "Wireless connection" },
+        "no": { "term": "Bluetooth", "definition": "Trådløs tilkobling" },
+        "fr": { "term": "Bluetooth", "definition": "Connexion sans fil" }
+      },
+      "doNotTranslate": true
+    },
+    {
+      "id": "accept",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Accept", "definition": "Approve request" },
+        "no": { "term": "Godta", "definition": "Godkjenne forespørsel" },
+        "fr": { "term": "Accepter", "definition": "Approuver la demande" }
+      }
+    },
+    {
+      "id": "decline",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Decline", "definition": "Reject request" },
+        "no": { "term": "Avslå", "definition": "Avvise forespørsel" },
+        "fr": { "term": "Refuser", "definition": "Rejeter la demande" }
+      }
+    },
+    {
+      "id": "cancel",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Cancel", "definition": "Terminate booking" },
+        "no": { "term": "Avbestille", "definition": "Avslutte booking" },
+        "fr": { "term": "Annuler", "definition": "Mettre fin à la réservation" }
+      }
+    },
+    {
+      "id": "cancellation",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Cancellation", "definition": "Booking termination" },
+        "no": { "term": "Avbestilling", "definition": "Booking-avslutning" },
+        "fr": { "term": "Annulation", "definition": "Fin de réservation" }
+      }
+    },
+    {
+      "id": "modify",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Modify", "definition": "Change booking" },
+        "no": { "term": "Endre", "definition": "Endre booking" },
+        "fr": { "term": "Modifier", "definition": "Changer la réservation" }
+      }
+    },
+    {
+      "id": "extend",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Extend", "definition": "Lengthen rental" },
+        "no": { "term": "Forlenge", "definition": "Forlenge leieforholdet" },
+        "fr": { "term": "Prolonger", "definition": "Allonger la location" }
+      }
+    },
+    {
+      "id": "nearby",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Nearby", "definition": "Close to location" },
+        "no": { "term": "I nærheten", "definition": "Nær stedet" },
+        "fr": { "term": "À proximité", "definition": "Proche du lieu" }
+      }
+    },
+    {
+      "id": "favorites",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "Favorites", "definition": "Saved items" },
+        "no": { "term": "Favoritter", "definition": "Lagrede elementer" },
+        "fr": { "term": "Favoris", "definition": "Éléments enregistrés" }
+      }
+    },
+    {
+      "id": "trips",
+      "category": "booking",
+      "translations": {
+        "en": { "term": "Trips", "definition": "Rental history" },
+        "no": { "term": "Turer", "definition": "Leiehistorikk" },
+        "fr": { "term": "Trajets", "definition": "Historique des locations" }
+      }
+    },
+    {
+      "id": "history",
+      "category": "ui",
+      "translations": {
+        "en": { "term": "History", "definition": "Past activity" },
+        "no": { "term": "Historikk", "definition": "Tidligere aktivitet" },
+        "fr": { "term": "Historique", "definition": "Activité passée" }
+      }
+    },
+    {
+      "id": "verification",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Verification", "definition": "Identity confirmation" },
+        "no": { "term": "Verifisering", "definition": "Identitetsbekreftelse" },
+        "fr": { "term": "Vérification", "definition": "Confirmation d'identité" }
+      }
+    },
+    {
+      "id": "drivers_license",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Driver's license", "definition": "Driving permit" },
+        "no": { "term": "Førerkort", "definition": "Kjøretillatelse" },
+        "fr": { "term": "Permis de conduire", "definition": "Autorisation de conduire" }
+      }
+    },
+    {
+      "id": "id_verification",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "ID verification", "definition": "Identity check" },
+        "no": { "term": "ID-verifisering", "definition": "Identitetssjekk" },
+        "fr": { "term": "Vérification d'identité", "definition": "Contrôle d'identité" }
+      }
+    },
+    {
+      "id": "requirements",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Requirements", "definition": "Necessary conditions" },
+        "no": { "term": "Krav", "definition": "Nødvendige betingelser" },
+        "fr": { "term": "Exigences", "definition": "Conditions nécessaires" }
+      }
+    },
+    {
+      "id": "terms_conditions",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Terms & conditions", "definition": "Usage agreement" },
+        "no": { "term": "Vilkår og betingelser", "definition": "Bruksavtale" },
+        "fr": { "term": "Conditions générales", "definition": "Accord d'utilisation" }
+      }
+    },
+    {
+      "id": "privacy_policy",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Privacy policy", "definition": "Data handling rules" },
+        "no": { "term": "Personvernregler", "definition": "Regler for datahåndtering" },
+        "fr": { "term": "Politique de confidentialité", "definition": "Règles de gestion des données" }
+      }
+    },
+    {
+      "id": "help_center",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Help center", "definition": "Support resources" },
+        "no": { "term": "Hjelpesenter", "definition": "Støtteressurser" },
+        "fr": { "term": "Centre d'aide", "definition": "Ressources d'assistance" }
+      }
+    },
+    {
+      "id": "support",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Support", "definition": "Customer assistance" },
+        "no": { "term": "Kundestøtte", "definition": "Kundeassistanse" },
+        "fr": { "term": "Support", "definition": "Assistance client" }
+      }
+    },
+    {
+      "id": "contact",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "Contact", "definition": "Reach out" },
+        "no": { "term": "Kontakt", "definition": "Ta kontakt" },
+        "fr": { "term": "Contact", "definition": "Contacter" }
+      }
+    },
+    {
+      "id": "faq",
+      "category": "platform",
+      "translations": {
+        "en": { "term": "FAQ", "definition": "Frequently asked questions" },
+        "no": { "term": "FAQ", "definition": "Ofte stilte spørsmål" },
+        "fr": { "term": "FAQ", "definition": "Questions fréquentes" }
+      },
+      "doNotTranslate": true
+    },
+    {
+      "id": "features",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Features", "definition": "Vehicle amenities" },
+        "no": { "term": "Funksjoner", "definition": "Kjøretøyutstyr" },
+        "fr": { "term": "Équipements", "definition": "Commodités du véhicule" }
+      }
+    },
+    {
+      "id": "child_seat",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Child seat", "definition": "Car seat for children" },
+        "no": { "term": "Barnesete", "definition": "Bilsete for barn" },
+        "fr": { "term": "Siège enfant", "definition": "Siège auto pour enfants" }
+      }
+    },
+    {
+      "id": "roof_rack",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Roof rack", "definition": "Cargo carrier on roof" },
+        "no": { "term": "Takboks", "definition": "Lastebærer på taket" },
+        "fr": { "term": "Coffre de toit", "definition": "Porte-bagages sur le toit" }
+      }
+    },
+    {
+      "id": "ski_rack",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Ski rack", "definition": "Ski carrier" },
+        "no": { "term": "Skistativ", "definition": "Skibærer" },
+        "fr": { "term": "Porte-skis", "definition": "Support à skis" }
+      }
+    },
+    {
+      "id": "bike_rack",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Bike rack", "definition": "Bicycle carrier" },
+        "no": { "term": "Sykkelstativ", "definition": "Sykkelbærer" },
+        "fr": { "term": "Porte-vélos", "definition": "Support à vélos" }
+      }
+    },
+    {
+      "id": "trailer_hitch",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Trailer hitch", "definition": "Towing attachment" },
+        "no": { "term": "Tilhengerfeste", "definition": "Slepetilbehør" },
+        "fr": { "term": "Attelage", "definition": "Dispositif de remorquage" }
+      }
+    },
+    {
+      "id": "winter_tires",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Winter tires", "definition": "Cold weather tires" },
+        "no": { "term": "Vinterdekk", "definition": "Dekk for kaldt vær" },
+        "fr": { "term": "Pneus hiver", "definition": "Pneus pour temps froid" }
+      }
+    },
+    {
+      "id": "all_wheel_drive",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "All-wheel drive", "definition": "4WD system" },
+        "no": { "term": "Firehjulstrekk", "definition": "4WD-system" },
+        "fr": { "term": "Quatre roues motrices", "definition": "Système 4x4" }
+      }
+    },
+    {
+      "id": "pet_friendly",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Pet friendly", "definition": "Animals allowed" },
+        "no": { "term": "Dyrevennlig", "definition": "Dyr tillatt" },
+        "fr": { "term": "Accepte les animaux", "definition": "Animaux autorisés" }
+      }
+    },
+    {
+      "id": "smoking",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Smoking", "definition": "Tobacco use" },
+        "no": { "term": "Røyking", "definition": "Tobakkbruk" },
+        "fr": { "term": "Fumeur", "definition": "Usage du tabac" }
+      }
+    },
+    {
+      "id": "non_smoking",
+      "category": "vehicle_spec",
+      "translations": {
+        "en": { "term": "Non-smoking", "definition": "No tobacco" },
+        "no": { "term": "Røykeforbud", "definition": "Ingen tobakk" },
+        "fr": { "term": "Non-fumeur", "definition": "Sans tabac" }
+      }
+    },
+    {
+      "id": "airport",
+      "category": "location",
+      "translations": {
+        "en": { "term": "Airport", "definition": "Aviation facility" },
+        "no": { "term": "Flyplass", "definition": "Luftfartsanlegg" },
+        "fr": { "term": "Aéroport", "definition": "Installation aéronautique" }
+      }
+    },
+    {
+      "id": "train_station",
+      "category": "location",
+      "translations": {
+        "en": { "term": "Train station", "definition": "Railway facility" },
+        "no": { "term": "Togstasjon", "definition": "Jernbaneanlegg" },
+        "fr": { "term": "Gare", "definition": "Installation ferroviaire" }
+      }
+    },
+    {
+      "id": "city_center",
+      "category": "location",
+      "translations": {
+        "en": { "term": "City center", "definition": "Urban core" },
+        "no": { "term": "Sentrum", "definition": "Bykjerne" },
+        "fr": { "term": "Centre-ville", "definition": "Cœur urbain" }
+      }
+    },
+    {
+      "id": "delivery",
+      "category": "product",
+      "translations": {
+        "en": { "term": "Delivery", "definition": "Vehicle brought to renter" },
+        "no": { "term": "Levering", "definition": "Kjøretøy levert til leietaker" },
+        "fr": { "term": "Livraison", "definition": "Véhicule livré au locataire" }
+      }
+    }
+  ],
+  "vehicleTypes": [
+    {
+      "id": "motorhome",
+      "translations": {
+        "en": { "term": "Motorhome", "aliases": ["RV"] },
+        "no": { "term": "Bobil", "aliases": ["Autocamper"] },
+        "fr": { "term": "Camping-car", "aliases": ["Autocaravane"] }
+      },
+      "availableIn": ["NO"]
+    },
+    {
+      "id": "campervan",
+      "translations": {
+        "en": { "term": "Campervan", "aliases": ["Camper"] },
+        "no": { "term": "Campervan", "aliases": [] },
+        "fr": { "term": "Campervan", "aliases": ["Fourgon aménagé"] }
+      },
+      "availableIn": ["NO", "FR", "DE", "ES", "BE", "AT"]
+    },
+    {
+      "id": "van",
+      "translations": {
+        "en": { "term": "Van", "aliases": ["Cargo van", "Utility vehicle"] },
+        "no": { "term": "Varebil", "aliases": ["Nyttekjøretøy"] },
+        "fr": { "term": "Utilitaire", "aliases": ["Fourgon", "Véhicule utilitaire"] }
+      },
+      "availableIn": ["NO", "FR", "DE", "ES", "BE", "AT"]
+    },
+    {
+      "id": "suv",
+      "translations": {
+        "en": { "term": "SUV", "aliases": ["4x4", "Crossover"] },
+        "no": { "term": "SUV", "aliases": ["Firehjulstrekker", "4x4"] },
+        "fr": { "term": "SUV", "aliases": ["4x4", "Tout-terrain"] }
+      }
+    },
+    {
+      "id": "citycar",
+      "translations": {
+        "en": { "term": "City car", "aliases": ["Compact", "Economy car"] },
+        "no": { "term": "Bybil", "aliases": ["Småbil", "Kompaktbil"] },
+        "fr": { "term": "Citadine", "aliases": ["Voiture de ville", "Compacte"] }
+      }
+    },
+    {
+      "id": "sedan",
+      "translations": {
+        "en": { "term": "Sedan", "aliases": ["Saloon"] },
+        "no": { "term": "Sedan", "aliases": ["Personbil"] },
+        "fr": { "term": "Berline", "aliases": ["Voiture particulière"] }
+      }
+    },
+    {
+      "id": "electric",
+      "translations": {
+        "en": { "term": "Electric car", "aliases": ["EV", "BEV"] },
+        "no": { "term": "Elbil", "aliases": ["Elektrisk bil"] },
+        "fr": { "term": "Voiture électrique", "aliases": ["VE", "Véhicule électrique"] }
+      }
+    }
+  ],
+  "vehicleCategories": [
+    {
+      "id": "economy",
+      "translations": {
+        "en": { "term": "Economy" },
+        "no": { "term": "Øko" },
+        "fr": { "term": "Économique" }
+      }
+    },
+    {
+      "id": "comfort",
+      "translations": {
+        "en": { "term": "Comfort" },
+        "no": { "term": "Komfort" },
+        "fr": { "term": "Confort" }
+      }
+    },
+    {
+      "id": "premium",
+      "translations": {
+        "en": { "term": "Premium" },
+        "no": { "term": "Premium" },
+        "fr": { "term": "Premium" }
+      }
+    },
+    {
+      "id": "prestige",
+      "translations": {
+        "en": { "term": "Prestige" },
+        "no": { "term": "Premium Pluss" },
+        "fr": { "term": "Prestige" }
+      }
+    }
+  ],
+  "categories": ["product", "insurance", "process", "regulation", "program", "pricing", "user_type", "concept", "technology", "integration", "booking", "ev_charging", "vehicle_type", "vehicle_spec", "ui", "platform", "fees", "location"]
+}
