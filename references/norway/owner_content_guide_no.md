@@ -116,17 +116,8 @@ Skatteregler endres årlig. **Henvis alltid til Skatteetaten.**
 
 ## Norge-eksklusive funksjoner
 
-### Native Connect (Smartcar)
-
-> **Kun tilgjengelig i Norge:** Med Native Connect kan Tesla og andre kompatible biler kobles til Getaround uten hardware-installasjon. Bilen kobles via Smartcar API direkte til Getaround-plattformen.
-
-### Langtidsleie
-
-> **Kun tilgjengelig i Norge:** Lei ut bilen din i 30–180 dager. Perfekt for pendlere, prosjektansatte eller turister på langvarige opphold. Inkluderer 2 000 km per måned.
-
-### Bobil (Motorhome)
-
-> **Kun tilgjengelig i Norge:** Getaround støtter utleie av bobiler – populært for road trips og ferieturer.
+> For detaljer om Norge-eksklusive funksjoner (Native Connect, Langtidsleie, Bobil), se `norway/market_context_no.md` > "Norway-Exclusive Features".
+> Se også `shared/segment_feature_matrix.md` for komplett oversikt over funksjonalitet per marked.
 
 ---
 
