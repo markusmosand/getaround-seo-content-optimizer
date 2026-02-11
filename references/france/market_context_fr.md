@@ -154,7 +154,7 @@ Note: Campervan and utilitaires (vans) ARE available in France.
 | Price | Often 30-40% cheaper than traditional | "Jusqu'à 40 % moins cher" |
 | Convenience | Connect = instant access via app | "Déverrouillez avec votre téléphone" |
 | Delivery | Car brought to you | "Livraison à votre adresse" |
-| Insurance | Full coverage included | "Assurance tous risques incluse" |
+| Insurance | Coverage included, 3 protection levels | "Assurance incluse avec 3 niveaux de protection (Minimum, Plus, Premium)" |
 
 ### For Owners (Propriétaires)
 
