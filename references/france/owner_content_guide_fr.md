@@ -160,23 +160,10 @@ Les Zones à Faibles Émissions sont un avantage concurrentiel pour Getaround. L
 
 ---
 
-## Données flotte (novembre 2025)
+## Données flotte
 
-| Ville/Région | Véhicules actifs |
-|--------------|------------------|
-| Paris | 5 866 |
-| Île-de-France (hors Paris) | 3 066 |
-| Lyon | 865 |
-| Marseille | 862 |
-| Bordeaux | 811 |
-| Nice | 765 |
-| Toulouse | 589 |
-| Montpellier | 449 |
-| Lille | 413 |
-| **Total France** | **~23 200** |
-
-**Utilisation dans le contenu :**
-> Getaround compte aujourd'hui plus de 23 000 véhicules disponibles en France, avec la plus forte concentration en région parisienne.
+> Pour les données flotte actualisées par ville/région, voir `france/market_context_fr.md` > « Fleet Data ».
+> Chiffre clé : ~23 200 véhicules actifs en France (novembre 2025), plus forte concentration en Île-de-France.
 
 ---
 

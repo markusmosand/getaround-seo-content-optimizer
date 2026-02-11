@@ -130,21 +130,10 @@ Skatteregler endres årlig. **Henvis alltid til Skatteetaten.**
 
 ---
 
-## Flåtedata (november 2025)
+## Flåtedata
 
-| Region | Aktive biler | Andel |
-|--------|-------------|-------|
-| Oslo | 2 067 | 30% |
-| Akershus | 848 | 13% |
-| Troms | 775 | 11% |
-| Nordland | 563 | 8% |
-| Bergen | 419 | 6% |
-| Stavanger | 336 | 5% |
-| Trondheim | 265 | 4% |
-| **Total Norge** | **~6 800** | 100% |
-
-**Bruk i innhold:**
-> Getaround har nå over 6 800 biler tilgjengelig i Norge, med størst tilbud i Oslo-området.
+> For oppdaterte flåtetall per region, se `norway/market_context_no.md` > "Fleet Data".
+> Nøkkeltall: ~6 800 aktive biler i Norge (november 2025), størst tilbud i Oslo-området.
 
 ---
 
