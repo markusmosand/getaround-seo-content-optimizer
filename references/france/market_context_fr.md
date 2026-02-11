@@ -39,6 +39,22 @@ Getaround is a peer-to-peer car-sharing marketplace. Private owners (propriétai
 
 Note: Campervan and utilitaires (vans) ARE available in France.
 
+### Segment Availability & Restrictions
+
+**Available in France:**
+- City cars (Citadines), Berlines, SUVs, Tesla/Electric, Vans (Utilitaires), Campervans
+- Delivery (Livraison) with 24h advance booking and 48h minimum rental
+- B2B / Getaround for Business (requires SIRET)
+- Entrepreneurs program (3 tiers: Entrepreneur, Professionnel, Enterprise)
+
+**Not available in France (do not mention in FR content):**
+- Native Connect (Smartcar) -- Norway only
+- Long-term rental 30-180 days -- Norway only
+- RV/Motorhome (Bobil) -- Norway only
+- If insurance -- France uses AXA
+
+> For complete cross-market comparison, see `shared/segment_feature_matrix.md`.
+
 ### Additional Services
 
 - **Delivery (Livraison):** Owner can deliver car to renter's chosen address. Requires 24h advance booking and 48h minimum rental.
@@ -154,7 +170,7 @@ Note: Campervan and utilitaires (vans) ARE available in France.
 | Price | Often 30-40% cheaper than traditional | "Jusqu'à 40 % moins cher" |
 | Convenience | Connect = instant access via app | "Déverrouillez avec votre téléphone" |
 | Delivery | Car brought to you | "Livraison à votre adresse" |
-| Insurance | Full coverage included | "Assurance tous risques incluse" |
+| Insurance | Coverage included, 3 protection levels | "Assurance incluse avec 3 niveaux de protection (Minimum, Plus, Premium)" |
 
 ### For Owners (Propriétaires)
 

@@ -40,39 +40,11 @@ Every owner article introduction must follow this sequence:
 
 ## Headline Strategy (Hybrid for SEO + AEO)
 
-Balance search engine optimization with Answer Engine Optimization using a hybrid headline approach.
+Use question-format H2 headers for AEO optimization. Use statement-style H3 headers with data for navigation.
 
-### H2: Question Format (AEO-Optimized)
+**Critical rule:** First sentence after H2 = direct answer with data (40-60 words). No introductions, no context-setting.
 
-Use questions for main section headers (H2). This:
-- Matches natural search queries
-- Improves featured snippet eligibility
-- Helps AI overviews cite your content
-- Creates clear navigation
-
-**Examples:**
-- "Hvor mye kan du tjene på å leie ut bilen?"
-- "Combien pouvez-vous gagner avec votre voiture ?"
-- "Hvordan fungerer forsikringen?"
-- "Comment fonctionne l'assurance ?"
-
-### H3: Statements with Numbers OK
-
-Use statement-style H3 headers for subsections. These:
-- Support internal navigation
-- Can include compelling data
-- Improve click-through on in-page links
-
-**Examples:**
-- "Tesla Model 3: 8 000–15 000 kr/mnd"
-- "Paris : jusqu'à 800 €/mois"
-- "5 steg for å komme i gang"
-
-### Critical Rule
-
-**First sentence after H2 = direct answer with data.**
-
-Don't introduce, don't context-set - answer immediately after the question header.
+> For complete header patterns, question formulas by content type, answer-block templates, and before/after examples, see `shared/aeo_header_patterns.md`.
 
 ---
 

@@ -100,20 +100,11 @@ Comprehensive guidelines for optimizing content for both traditional search engi
 - Include keywords naturally in 1-2 headers
 - Make headers scannable (user should understand article from headers alone)
 
-**Example structure:**
-```
-# H1: Topp 5 aktiviteter for barn i Oslo
+### Hybrid Headline Strategy (AEO-Optimized)
 
-## H2: Hvorfor Oslo er perfekt for familier
-## H2: 1. Vikingskipshuset
-### H3: Praktisk info
-### H3: Tips for besøket
-## H2: 2. Tusenfryd
-### H3: Praktisk info
-### H3: Tips for besøket
-## H2: Planlegg turen med leiebil
-## H2: Ofte stilte spørsmål
-```
+Use question-format H2 headers and statement H3 headers. First sentence after every H2 must be a direct answer with data (40-60 words).
+
+> For complete header patterns, answer-first templates, featured snippet optimization, and before/after examples, see `shared/aeo_header_patterns.md`.
 
 ### Internal Linking Strategy
 

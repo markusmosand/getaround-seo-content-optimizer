@@ -116,35 +116,15 @@ Skatteregler endres årlig. **Henvis alltid til Skatteetaten.**
 
 ## Norge-eksklusive funksjoner
 
-### Native Connect (Smartcar)
-
-> **Kun tilgjengelig i Norge:** Med Native Connect kan Tesla og andre kompatible biler kobles til Getaround uten hardware-installasjon. Bilen kobles via Smartcar API direkte til Getaround-plattformen.
-
-### Langtidsleie
-
-> **Kun tilgjengelig i Norge:** Lei ut bilen din i 30–180 dager. Perfekt for pendlere, prosjektansatte eller turister på langvarige opphold. Inkluderer 2 000 km per måned.
-
-### Bobil (Motorhome)
-
-> **Kun tilgjengelig i Norge:** Getaround støtter utleie av bobiler – populært for road trips og ferieturer.
+> For detaljer om Norge-eksklusive funksjoner (Native Connect, Langtidsleie, Bobil), se `norway/market_context_no.md` > "Norway-Exclusive Features".
+> Se også `shared/segment_feature_matrix.md` for komplett oversikt over funksjonalitet per marked.
 
 ---
 
-## Flåtedata (november 2025)
+## Flåtedata
 
-| Region | Aktive biler | Andel |
-|--------|-------------|-------|
-| Oslo | 2 067 | 30% |
-| Akershus | 848 | 13% |
-| Troms | 775 | 11% |
-| Nordland | 563 | 8% |
-| Bergen | 419 | 6% |
-| Stavanger | 336 | 5% |
-| Trondheim | 265 | 4% |
-| **Total Norge** | **~6 800** | 100% |
-
-**Bruk i innhold:**
-> Getaround har nå over 6 800 biler tilgjengelig i Norge, med størst tilbud i Oslo-området.
+> For oppdaterte flåtetall per region, se `norway/market_context_no.md` > "Fleet Data".
+> Nøkkeltall: ~6 800 aktive biler i Norge (november 2025), størst tilbud i Oslo-området.
 
 ---
 
