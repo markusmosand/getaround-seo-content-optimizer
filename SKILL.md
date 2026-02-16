@@ -240,6 +240,27 @@ Create structured proposal with five components:
 - E-E-A-T signal additions
 - Unique data point integration
 
+**F) AEO Header Optimization** (reference `aeo_header_patterns.md`)
+- Convert H2s to question format matching search queries
+- Plan 40-60 word answer-first paragraphs after each question header
+- Identify H2 injection opportunities for related high-volume queries
+- Apply PAA/Featured Snippet alignment (title tag, slug, H1, first sentence match query)
+
+**G) CTA Strategy** (reference `cta_framework.md`)
+- Select CTA strength based on content type and intent:
+  | Content Type | CTA Strength | Example |
+  |--------------|--------------|---------|
+  | Activity guides | Soft | "Utforsk flere tips" / "Découvrir plus" |
+  | Use-case articles | Medium | "Se tilgjengelige biler" / "Voir les voitures" |
+  | Owner guides | Strong | "Start å tjen i dag" / "Commencer à gagner" |
+- Choose appropriate power words for market (NO/FR)
+- Determine placement (end only for soft, middle+end for medium/strong)
+
+**H) Schema Markup Planning** (reference `schema_templates.md`)
+- Select schema types: Article (always) + FAQPage (if 3+ Q&A) + HowTo (if step-by-step)
+- Plan FAQ questions for schema extraction
+- Note HowTo steps if applicable
+
 ### Step 6: Execution (If Requested)
 
 If user requests full rewrite, produce:
@@ -290,13 +311,71 @@ Include:
 
 Reference market-specific `performance_data` files for format-specific best practices.
 
+### Step 7: Metadata Footer Generation (REQUIRED)
+
+**Every optimized article must include a structured metadata footer for tracking.**
+
+Reference `seo_aeo_best_practices.md` Part 8 for full template. Output format:
+
+```markdown
+---
+
+## SEO/AEO Metadata
+
+### Core SEO
+| Field | Value |
+|-------|-------|
+| Title Tag | [50-60 chars with primary keyword] |
+| Meta Description | [150-160 chars with CTA] |
+| Slug | [url-friendly-slug-with-keyword] |
+| Primary Keyword | [main target keyword] |
+| Secondary Keywords | [keyword 1, keyword 2, keyword 3] |
+
+### Content Structure
+| Field | Value |
+|-------|-------|
+| H1 | [exact article title] |
+| H2 Count | [number of H2 sections] |
+| Question Headers | [list of H2s phrased as questions] |
+| Answer-First Sections | [Yes/No, count of 40-60 word answer blocks] |
+| Word Count | [total] |
+
+### CTA Details
+| Field | Value |
+|-------|-------|
+| Primary CTA | [exact CTA text] |
+| CTA Type | [soft / medium / strong] |
+| CTA Placement | [end only / middle + end] |
+
+### AEO Readiness
+| Field | Value |
+|-------|-------|
+| FAQ Section | [Yes/No, question count] |
+| Featured Snippet Optimized | [Yes/No] |
+| Schema Types | [Article, FAQPage, HowTo] |
+
+### Business & Tracking
+| Field | Value |
+|-------|-------|
+| Content Type | [listicle / guide / use-case / city guide] |
+| Target Audience | [renter / owner] |
+| Market | [NO / FR] |
+| Business Fit Score | [1-5] |
+
+### JSON-LD Schema
+[Include generated schema code from schema_templates.md]
+```
+
 ## Using Bundled References
 
 ### Reference structure:
 ```
 references/
 ├── shared/
-│   ├── seo_aeo_best_practices.md     # Universal SEO/AEO guidelines
+│   ├── seo_aeo_best_practices.md     # Universal SEO/AEO guidelines (Parts 1-10)
+│   ├── aeo_header_patterns.md        # AEO header optimization, answer-first structure
+│   ├── cta_framework.md              # CTA psychology, strength matrix, power words
+│   ├── schema_templates.md           # JSON-LD templates (Article, FAQPage, HowTo)
 │   ├── owner_content_principles.md   # Universal owner content guidelines
 │   ├── product_glossary.json         # Multilingual product terminology
 │   └── country_config.json           # Structured country configuration
@@ -397,8 +476,8 @@ After market detection (Step 0), load market-specific references.
 
 ### Universal References (Shared)
 
-**shared/seo_aeo_best_practices.md** - Contains:
-- Traditional SEO fundamentals (keywords, titles, meta, internal linking)
+**shared/seo_aeo_best_practices.md** - Contains (Parts 1-10):
+- Part 1-6: Traditional SEO fundamentals (keywords, titles, meta, internal linking)
 - Hybrid headline strategy (H2=questions, H3=statements with data)
 - External reference guidelines (volatile vs stable data handling)
 - AEO optimization (FAQ schema, Q&A structure, E-E-A-T, unique data)
@@ -406,6 +485,34 @@ After market detection (Step 0), load market-specific references.
 - Markdown formatting for Ghost CMS
 - Quality checklists (SEO, AEO, content, format)
 - Common mistakes to avoid
+- Part 7: Cross-references to advanced guides
+- Part 8: Metadata Footer Template (for spreadsheet tracking)
+- Part 9: AI "Interview" Method for unique content
+- Part 10: Internal Linking Strategy with prompt template
+
+**shared/aeo_header_patterns.md** - Contains (load for AEO optimization):
+- Part 1-4: Why header structure matters for AI Overviews
+- Question-format header templates (Hva/Hvordan/Hvor mye, Qu'est-ce que/Comment/Combien)
+- Answer-first paragraph structure (40-60 word format)
+- Featured snippet optimization (paragraph, list, table types)
+- Part 5: Semantic chunking and PAA/Featured Snippet alignment
+- Part 6-8: Header hierarchy best practices, Getaround examples, transformations
+- Part 9: H2 Content Injection technique for capturing related queries
+
+**shared/cta_framework.md** - Contains (load for content creation):
+- Part 1-2: CTA psychology principles (Clarity, Urgency, Value, Exclusivity)
+- CTA strength matrix by content type and intent
+- Part 3: Power words for car-sharing (NO/FR)
+- Part 4-5: CTA placement rules and templates library
+- Part 6-8: CTA copywriting formulas, testing checklist, common mistakes
+
+**shared/schema_templates.md** - Contains (load for schema generation):
+- Part 1: Article/BlogPosting JSON-LD template
+- Part 2: FAQPage JSON-LD template with Getaround examples
+- Part 3: HowTo JSON-LD template
+- Part 4: Combined schema examples
+- Part 5: Validation checklist (Google Rich Results Test)
+- Part 6: Ghost CMS integration instructions
 
 **shared/owner_content_principles.md** - Contains (load for owner content only):
 - Information Hierarchy Rule (Answer First, Explain After)
