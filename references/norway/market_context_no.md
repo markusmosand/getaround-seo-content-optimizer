@@ -136,6 +136,23 @@ Getaround is a peer-to-peer car-sharing marketplace. Private owners and small pr
 
 ---
 
+## Segment Availability & Restrictions
+
+### Available Segments in Norway
+- City cars, SUVs, Tesla/Electric, Vans, Campervans: All available
+- **RV/Motorhome (Bobil):** Available (Norway exclusive)
+- **Long-term rental (30-180 days):** Available (Norway exclusive), 2,000 km/month included
+- **Native Connect (Smartcar):** Available (Norway exclusive)
+
+### Never Claim for Norway
+- Entrepreneurs program benefits (not verified for NO market)
+- Specific income guarantees (always use ranges from `owner_content_guide_no.md`)
+- Features from other markets not listed above
+
+> For complete cross-market comparison, see `shared/segment_feature_matrix.md`.
+
+---
+
 ## Rules, Insurance & Qualifications
 
 - **Age & license:** Minimum requirements apply

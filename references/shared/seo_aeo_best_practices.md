@@ -89,20 +89,9 @@ Comprehensive guidelines for optimizing content for both traditional search engi
 
 ### Hybrid Headline Strategy (AEO-Optimized)
 
-Balance SEO and AEO with a hybrid approach to headers:
+Use question-format H2 headers and statement H3 headers. First sentence after every H2 must be a direct answer with data (40-60 words).
 
-| Level | Format | Rationale | Example |
-|-------|--------|-----------|---------|
-| H2 | Question | Matches search queries, featured snippets | "Hvor mye kan du tjene?" |
-| H3 | Statement with data | Internal navigation, CTR optimization | "Tesla: 8 000–15 000 kr/mnd" |
-
-**Critical rule:** First sentence after H2 = direct answer with data. Don't introduce or context-set – answer immediately.
-
-**Why this works:**
-- Questions match how people search (voice search, featured snippets)
-- Statements with numbers create compelling navigation
-- Direct answers improve AI citation likelihood
-- Combines SEO keyword placement with AEO structure
+> For complete header patterns, answer-first templates, featured snippet optimization, and before/after examples, see `shared/aeo_header_patterns.md`.
 
 ### Internal Linking Strategy
 
